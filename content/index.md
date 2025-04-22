@@ -1,18 +1,11 @@
-# Data visualization using Python and Vega-Altair
+# Introduction to Programming for Data Science
 
-In this introductory-level workshop, we will learn to produce **reproducible
-data visualization pipelines using the Python programming language** and the
-[Vega-Altair](https://altair-viz.github.io/) declarative visualization library.
+In this introductory-level workshop, we will learn the very basics of programming for data science.
+What does it mean to code? To "run a script"? Variables and functions?
 
-We will work in [Jupyter Notebooks](https://jupyter.org/) and start with
-**Python basics**.  We will introduce the [pandas](https://pandas.pydata.org/)
-library for "data wrangling" (reading, writing, sorting, and filtering of
-data).  With pandas, we will be able to read data from Excel sheets and
-comma-separated values (CSV) files.
-
-Finally, will learn how to produce
-and share **reproducible plots** using
-[Vega-Altair](https://altair-viz.github.io/).
+We will work in [Jupyter Notebooks](https://jupyter.org/) for its simplicity to get started writing
+code even without any previous experience. We will learn how to produce some **reproducible plots** using
+[Vega-Altair](https://altair-viz.github.io/) and in general how to find your way with programming in Python
 
 
 ## Who is the course for?
@@ -21,22 +14,18 @@ and share **reproducible plots** using
 - Somebody who needs
   to read, process, and plot data for their work or studies and would like to
   try it out with Python.
-- Persons who already use Python for this but want to learn about libraries
-  to simplify common tasks and about how to share their workflow in a reproducible way.
 
 :::{prereq} Preparations
 - No programming language experience needed, we will start from zero and learn the basics together
 - Computer with network access
 - {doc}`installation`
-- Bring one of your recent plotting tasks or challenges
 :::
 
 
 ## What is not taught?
 
 - Version control. Although super useful it is outside of this workshop.
-- Python outside a Jupyter Notebook.
-- **Running the examples in VS Code or Spyder might not be possible**. Please use Jupyter Notebooks for this course.
+- Python outside a Jupyter Notebook (e.g. on terminal, or VScode, or spyder) 
 - Python sets and tuples are only mentioned.
 - File input/output is only used via libraries and doing "own" file-I/O is only part
   of optional material.
@@ -45,7 +34,6 @@ and share **reproducible plots** using
 - Python packaging.
 - NumPy arrays.
 - Managing environments and installing Python packages.
-
 
 (episode-overview)=
 
