@@ -5,7 +5,7 @@ What does it mean to code? To "run a script"? Variables and functions?
 
 We will work in [Jupyter Notebooks](https://jupyter.org/) for its simplicity to get started writing
 code even without any previous experience. We will learn how to produce some **reproducible plots** using
-[Vega-Altair](https://altair-viz.github.io/) and in general how to find your way with programming in Python
+[Vega-Altair](https://altair-viz.github.io/) and in general how to find your way with programming in Python or R.
 
 
 ## Who is the course for?
@@ -50,6 +50,8 @@ Day 1 morning:
   [![nbviewer badge](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.org/github/coderefinery/data-visualization-python/blob/main/notebooks/plotting.ipynb)
   [![colab badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/coderefinery/data-visualization-python/blob/main/notebooks/plotting.ipynb)
   [![binder badge](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/coderefinery/data-visualization-python/HEAD?labpath=notebooks%2Fplotting.ipynb)
+- {doc}`plotting_R`
+
 
 Day 1 afternoon:
 - More {doc}`plotting`
@@ -74,6 +76,7 @@ Day 3 morning:
 
 jupyter.md
 python-basics.md
+r-basics.md
 plotting.md
 tidy-data.md
 customizing-plots.md
