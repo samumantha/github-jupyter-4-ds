@@ -1,3 +1,4 @@
-# Data visualization using Python and [Vega-Altair](https://altair-viz.github.io/)
+# Programming for Data Science
+*A short introduction for beginners*
 
-Lesson: https://coderefinery.github.io/data-visualization-python/
+More details here later
