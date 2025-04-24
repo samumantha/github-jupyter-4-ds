@@ -39,8 +39,7 @@ code even without any previous experience. We will learn how to produce some **r
 
 ## Episode overview
 
-Day 1 morning:
-- {doc}`installation`
+Introductory workshop (3h):
 - {doc}`jupyter`
   [![nbviewer badge](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.org/github/coderefinery/data-visualization-python/blob/main/notebooks/first-notebook.ipynb)
   [![colab badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/coderefinery/data-visualization-python/blob/main/notebooks/first-notebook.ipynb)
@@ -52,21 +51,18 @@ Day 1 morning:
   [![binder badge](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/coderefinery/data-visualization-python/HEAD?labpath=notebooks%2Fplotting.ipynb)
 - {doc}`plotting_R`
 
-
-Day 1 afternoon:
+More advanced topics:
 - More {doc}`plotting`
 - {doc}`tidy-data`
-
-Day 2 morning:
 - {doc}`customizing-plots`
   [![nbviewer badge](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.org/github/coderefinery/data-visualization-python/blob/main/notebooks/customizing.ipynb)
   [![colab badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/coderefinery/data-visualization-python/blob/main/notebooks/customizing.ipynb)
   [![binder badge](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/coderefinery/data-visualization-python/HEAD?labpath=notebooks%2Fcustomizing.ipynb)
 - {doc}`gallery`
-
-Day 3 morning:
-- How to find help and how to navigate the documentation
 - {doc}`sharing`
+
+Other:
+- {doc}`installation`
 
 
 ```{toctree}
@@ -78,10 +74,7 @@ jupyter.md
 python-basics.md
 r-basics.md
 plotting.md
-tidy-data.md
-customizing-plots.md
-gallery.md
-sharing.md
+plotting_R.md
 ```
 
 ```{toctree}
@@ -94,8 +87,12 @@ colab.md
 
 ```{toctree}
 :maxdepth: 1
-:caption: Leftover from previous versions
+:caption: Other materials
 
+tidy-data.md
+customizing-plots.md
+gallery.md
+sharing.md
 parsing-custom-format.md
 ```
 
@@ -108,3 +105,4 @@ When preparing this lesson, we have reused these resources:
 - <https://datacarpentry.org/python-ecology-lesson/>
 - <https://swcarpentry.github.io/python-novice-inflammation/>
 - <https://coderefinery.github.io/jupyter/>
+- <https://coderefinery.github.io/data-visualization-python/>
