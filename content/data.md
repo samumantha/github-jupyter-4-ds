@@ -131,9 +131,9 @@ great resources to explore more:
   (useful not only for ecologists)
 
 
-::::{challenge} Work with tabular data using Python
+::::{challenge} Exercise - Work with tabular data using Python
 
-You might be an Excel expert, but how about doing the same things you do with Excel with python? What is the advantage compared to doing it with Excel?
+You might be an Excel expert, but how about doing the same things you do with Excel with python? What is in your opinion the biggest advantage compared to doing it with Excel?
 
 1. Try running some of the  commands above in a jupyter notebook and look at their output
 2. Calculate the median of the column "max temperature". What is its value? To know how to calculate the median, check the documentation of [Pandas DataFrame class](https://pandas.pydata.org/docs/reference/frame.html).
