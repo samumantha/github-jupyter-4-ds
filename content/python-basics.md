@@ -248,6 +248,108 @@ It is possible to create own modules to collect own functions for reuse.
 
 
 ## Exercises
+````{challenge} Exercise: checking file names before publishing a dataset
+You have received a dataset (a folder with many files) but some files do not follow good naming conventions (no spaces, no strange characters) which could make the dataset less FAIR.
+
+```{code-block} python
+files = [
+    "Final Report V2!.xlsx",
+    "data summary 2023 .csv",
+    "RESULTS-supplementary,materials.csv",
+    "clean_data.csv",
+    "code%python.py",
+    "code#for#%plots.py",
+    "figure1.eps",
+    "figure2.eps",
+    "figure2&.eps",
+    "figure2_.eps"
+]
+```
+The number of files is so large that manually reviewing each one would be time-consuming and error-prone.
+
+You are given the following Python script to check if a file name contains non-recommended characters:
+
+```{code-block} python
+def check_filename(filename):
+    bad_chars = [' ', ',', '&', '!']
+    for char in filename:
+        if char in bad_chars:
+            print(f'"{filename}" is bad because it contains one or more non-recommended characters.')
+            return
+    print(f'"{filename}" is good (from a FAIR point of view).')
+
+for name in files:
+    check_filename(name)
+```
+
+Your tasks are:
+
+1. Add "#" and "%" to the list of non-recommended characters.
+
+2. Modify the function so it also prints which bad character(s) were found.
+
+3. (Advanced) Modify the function so that it suggests a better file name by replacing non-recommended characters with underscores or removing them.
+
+````
+
+````{solution} Solution 
+
+## **Task 1 Solution – Add `"#"` and `"%"` to the bad characters list**
+
+```python
+def check_filename(filename):
+    bad_chars = [' ', ',', '&', '!', '#', '%']  # added '#' and '%'
+    for char in filename:
+        if char in bad_chars:
+            print(f'"{filename}" is bad because it contains one or more non-recommended characters.')
+            return
+    print(f'"{filename}" is a good filename.')
+```
+
+## **Task 2 Solution – Show which bad characters were found**
+
+```python
+def check_filename(filename):
+    bad_chars = [' ', ',', '&', '!', '#', '%']
+    found_bad = []
+
+    for char in filename:
+        if char in bad_chars and char not in found_bad:
+            found_bad.append(char)
+
+    if found_bad:
+        print(f'"{filename}" is bad because it contains the following non-recommended characters: {found_bad}')
+    else:
+        print(f'"{filename}" is a good filename.')
+```
+
+## **Task 3 (Advanced) – Suggest a better filename**
+
+Here, we’ll suggest a new filename by replacing bad characters with underscores (`_`), using a character-by-character loop.
+
+```python
+def check_filename(filename):
+    bad_chars = [' ', ',', '&', '!', '#', '%']
+    found_bad = []
+    suggested = ""
+
+    for char in filename:
+        if char in bad_chars:
+            if char not in found_bad:
+                found_bad.append(char)
+            suggested += "_"  # replace bad character
+        else:
+            suggested += char  # keep good character
+
+    if found_bad:
+        print(f'"{filename}" is bad because it contains: {found_bad}')
+        print(f'→ Suggested filename: "{suggested}"')
+    else:
+        print(f'"{filename}" is a good filename.')
+```
+
+````
+
 
 ````{challenge} Exercise: create a function that computes the standard deviation
 - Arithmetic mean:
