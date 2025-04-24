@@ -437,6 +437,89 @@ Functions:
 - Promote code reuse
 - Simplify debugging
 
+````{challenge} Exercise: Running code on the terminal
+Open a terminal (in a computer where Python/R/Julia are installed) and try some of the commands above.
+::::{tabs}
+  :::{group-tab} Python
+  ```bash
+  # in your terminal, start python by typing the command "python"
+  # it will look like this:
+
+  (base) enrico@computername:~$ python
+  Python 3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0] on linux
+  Type "help", "copyright", "credits" or "license" for more information.
+  >>> 
+  ```
+  Then run some code for example with
+  ```bash
+  (base) enrico@computername:~$ python
+  Python 3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0] on linux
+  Type "help", "copyright", "credits" or "license" for more information.
+  >>> print("Hello world!")
+  Hello world!
+  >>> 
+  ```
+
+  :::
+
+  :::{group-tab} R
+  ```bash
+  # in your terminal, start R by typing the command "R"
+  # it will look like this:
+
+  (base) enrico@computername:~$ R
+  R version 4.3.3 (2024-02-29) -- "Angel Food Cake"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-conda-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+  ```
+  Then run some code for example `print("Hello world!")`:
+  ```bash
+  > print("Hello world!")
+  [1] "Hello world!"
+  ```
+  :::
+
+  :::{group-tab} Julia
+  ```bash
+  # in your terminal, start Julia by typing the command "julia"
+  # it will look like this:
+
+  (base) enrico@computername:~$ julia
+                 _
+     _       _ _(_)_     |  Documentation: https://docs.julialang.org
+    (_)     | (_) (_)    |
+     _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+    | | | | | | |/ _` |  |
+    | | |_| | | | (_| |  |  Version 1.10.3 (2024-04-30)
+   _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+  |__/                   |
+
+julia> 
+  ```
+  Then run some code for example `println("Hello world!")`:
+  ```bash
+  julia> println("Hello world!")
+  Hello world!
+  ```
+  :::
+::::
+
+Why is this approach unpractical? Consider the usability perspective but also the reproducibility point of view...
+
+````
+
 
 ## Learn More
 

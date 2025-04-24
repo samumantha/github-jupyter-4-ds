@@ -284,17 +284,35 @@ for name in files:
 
 Your tasks are:
 
-1. Add "#" and "%" to the list of non-recommended characters.
+1. Create a new jupyter notebook and make sure you can run the two code blocks above. Look at the output. 
 
-2. Modify the function so it also prints which bad character(s) were found.
+2. Add "#" and "%" to the list of non-recommended characters.
 
-3. (Advanced) Modify the function so that it suggests a better file name by replacing non-recommended characters with underscores or removing them.
+3. Modify the function so it also prints which bad character(s) were found.
+
+4. (Advanced) Modify the function so that it suggests a better file name by replacing non-recommended characters with underscores. If the output of this function would be used to automatically rename files, what risks could we face?
 
 ````
 
 ````{solution} Solution 
 
-## **Task 1 Solution – Add `"#"` and `"%"` to the bad characters list**
+## Task 1 Solution
+
+You should be able to see something like:
+```text
+"Final Report V2!.xlsx" is bad because it contains one or more non-recommended characters.
+"data summary 2023 .csv" is bad because it contains one or more non-recommended characters.
+"RESULTS-supplementary,materials.csv" is bad because it contains one or more non-recommended characters.
+"clean_data.csv" is good (from a FAIR point of view).
+"code%python.py" is good (from a FAIR point of view).
+"code#for#%plots.py" is good (from a FAIR point of view).
+"figure1.eps" is good (from a FAIR point of view).
+"figure2.eps" is good (from a FAIR point of view).
+"figure2&.eps" is bad because it contains one or more non-recommended characters.
+"figure2_.eps" is good (from a FAIR point of view).
+```
+
+## Task 2 Solution – Add `"#"` and `"%"` to the bad characters list
 
 ```python
 def check_filename(filename):
@@ -306,7 +324,7 @@ def check_filename(filename):
     print(f'"{filename}" is a good filename.')
 ```
 
-## **Task 2 Solution – Show which bad characters were found**
+## Task 3 Solution – Show which bad characters were found
 
 ```python
 def check_filename(filename):
@@ -323,7 +341,7 @@ def check_filename(filename):
         print(f'"{filename}" is a good filename.')
 ```
 
-## **Task 3 (Advanced) – Suggest a better filename**
+## Task 4 (Advanced) – Suggest a better filename
 
 Here, we’ll suggest a new filename by replacing bad characters with underscores (`_`), using a character-by-character loop.
 
@@ -347,6 +365,8 @@ def check_filename(filename):
     else:
         print(f'"{filename}" is a good filename.')
 ```
+
+What issue do you see in the output of this function, if the new name would be used to automatically rename files?
 
 ````
 
