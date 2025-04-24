@@ -17,11 +17,11 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Data visualization using Python and Vega-Altair'
+project = 'Introduction to Programming for Data Science'
 copyright = 'CodeRefinery project'
-author = 'Radovan Bast'
+author = 'Enrico Glerean'
 github_user = 'coderefinery'
-github_repo_name = 'data-visualization-python'  # auto-detected from dirname if blank
+github_repo_name = 'programming4ds'  # auto-detected from dirname if blank
 github_version = 'main'
 conf_py_path = '/content/' # with leading and trailing slash
 

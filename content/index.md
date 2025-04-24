@@ -44,6 +44,7 @@ Introductory workshop (3h):
   [![nbviewer badge](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.org/github/coderefinery/data-visualization-python/blob/main/notebooks/first-notebook.ipynb)
   [![colab badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/coderefinery/data-visualization-python/blob/main/notebooks/first-notebook.ipynb)
   [![binder badge](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/coderefinery/data-visualization-python/HEAD?labpath=notebooks%2Ffirst-notebook.ipynb)
+- {doc}`intro_to_programming`
 - {doc}`python-basics`
 - {doc}`plotting`
   [![nbviewer badge](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.org/github/coderefinery/data-visualization-python/blob/main/notebooks/plotting.ipynb)
@@ -71,6 +72,7 @@ Other:
 :hidden:
 
 jupyter.md
+intro_to_programming.md
 python-basics.md
 r-basics.md
 plotting.md

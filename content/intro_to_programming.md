@@ -45,17 +45,16 @@ Variables are containers used to store data values. They have names, and values 
   print(age)
   ```
   :::
-  
+
   :::{group-tab} Julia
   ```julia
   name = "Alice"
   age = 30
   println(name)
   println(age)
+  ```
   :::
 ::::
-
-
 
 Variable names:
 - Should be descriptive
@@ -68,9 +67,25 @@ Variable names:
 Data types define the type of data stored in variables. Common data types include:
 
 - **Integer**: Whole numbers
+  ::::{tabs}
+  :::{group-tab} Python
   ```python
   age = 30
   ```
+  :::
+
+  :::{group-tab} R
+  ```R
+  age <- 30
+  ```
+  :::
+
+  :::{group-tab} Julia
+  ```julia
+  age = 30
+  ```
+  :::
+::::
 
 - **Float**: Numbers with decimal points
   ```python
@@ -204,5 +219,4 @@ Explore these resources for further learning:
 - Functions encapsulate reusable code.
 - Operators manipulate data.
 ::: 
-
 
