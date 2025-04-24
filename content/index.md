@@ -75,8 +75,8 @@ intro_to_programming.md
 jupyter.md
 python-basics.md
 r-basics.md
+data.md
 plotting.md
-plotting_R.md
 ```
 
 ```{toctree}
