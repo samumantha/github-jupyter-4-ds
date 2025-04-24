@@ -106,6 +106,17 @@ data_monthly[data_monthly["max temperature"] > 20.0]
 ```
 
 
+## What makes Python and pandas better than Excel?
+
+- **Automation**: Python scripts can be reused and automated, reducing repetitive tasks.
+- **Scalability**: Excel struggles with large datasets, while pandas handles millions of rows efficiently.
+- **Version control**: Code and data processing steps can be tracked using Git.
+- **Reproducibility**: Your workflow can be repeated or shared exactly by others.
+- **Visualization and analysis**: Seamless integration with powerful libraries like matplotlib, seaborn, and statsmodels.
+- **Error prevention**: Fewer manual steps mean fewer opportunities for copy-paste mistakes.
+- **Integration**: Easily connects with databases, APIs, and other formats like JSON, HDF5, etc.
+
+
 ## Where to learn more about pandas
 
 Pandas is extremely powerful and there is a lot that can be done and there are
@@ -131,6 +142,52 @@ You might be an Excel expert, but how about doing the same things you do with Ex
 ::::
 
 
+````{solution} Solution 
+
+2. **Calculate the median of the column "max temperature".**  
+```python
+data_monthly["max temperature"].median()
+```
+
+3. **Sort the data by the column "max temperature". Which city was the hottest?**  
+```python
+sorted_data = data_monthly.sort_values("max temperature", ascending=False)
+sorted_data.head(1)
+```
+
+4. **(Advanced) Compute the differences of max temperatures between Oslo and Tromsø for each month**  
+```python
+pivot_df = data_monthly.pivot(index='date', columns='name', values='max temperature')
+pivot_df['Temperature_Difference'] = pivot_df['Oslo - Blindern'] - pivot_df['Tromso - Langnes']
+print(pivot_df)
+```
+````
+
+
+## Other Python libraries for tabular data
+
+Besides pandas, here are a few other libraries useful for working with tabular data:
+
+- **Polars**: Fast DataFrame library written in Rust, great for large datasets.
+- **Dask**: Scales pandas workflows to larger-than-memory datasets and parallel computation.
+- **Vaex**: Optimized for lazy evaluation and memory-efficient handling of huge tabular datasets.
+- **PySpark**: Python API for Apache Spark, useful for distributed data processing.
+- **datatable**: High-performance library for large data processing with R-style syntax.
+
+
+## Libraries for other types of data
+
+Here are some popular Python libraries for working with non-tabular data:
+
+- **JSON and structured text**: `json`, `orjson`, `pydantic`
+- **Plain text and NLP**: `nltk`, `spacy`, `transformers`, `re` (regex)
+- **Images**: `Pillow`, `OpenCV`, `imageio`, `scikit-image`
+- **Videos**: `OpenCV`, `moviepy`, `ffmpeg-python`
+- **Audio and sound**: `librosa`, `pydub`, `torchaudio`, `wave`
+- **Scientific data formats**: `h5py`, `netCDF4`, `xarray`
+- **Geospatial data**: `geopandas`, `shapely`, `rasterio`, `fiona`
+
+These libraries can be combined with pandas or used standalone to handle more complex, real-world data types.
 
 ---
 
@@ -139,3 +196,4 @@ You might be an Excel expert, but how about doing the same things you do with Ex
 - Pandas are the most popular option when dealing with tabular data
 - There are many more types of data and libraries available, please explore which data you would like to load.
 :::
+
