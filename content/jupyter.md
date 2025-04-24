@@ -115,8 +115,7 @@ Think of it like a kitchen:
 
 Together, this setup allows you to write code, execute it, and see results — all in one place!
 
-This is a simplified view — in practice, the Jupyter architecture can be extended with multiple users, remote kernels, and more. See the full architecture documentation:  
-👉 [https://docs.jupyter.org/en/latest/projects/architecture/content-architecture.html](https://docs.jupyter.org/en/latest/projects/architecture/content-architecture.html)
+This is a simplified view — in practice, the Jupyter architecture can be extended with multiple users, remote kernels, and more. See the full architecture documentation at [https://docs.jupyter.org/en/latest/projects/architecture/content-architecture.html](docs.jupyter.org)
 :::
 
 
