@@ -15,6 +15,7 @@
 > ## What we will not cover
 >
 > - Command line interface
+> - GitHub Desktop
 > - Cloning using SSH protocol and SSH keys
 > - Rebasing and squashing
 > - Many Git tricks which can be explored later
