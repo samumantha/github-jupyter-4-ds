@@ -1,18 +1,3 @@
-# Collaborating and sharing using GitHub without command line
+# Enhancing Data Support: Practical Reproducibility
 
-Licensed under [CC-BY](LICENSE).
-
-Currently the best way to give credit is to list your derivative work here:
-https://coderefinery.org/lessons/reusing/
-
-But we are working on making these lessons citable: https://coderefinery.org/blog/2021/11/21/towards-citable-lessons/
-
-
-## Similar workshops which serve as inspiration
-
-- https://github.com/lexnederbragt/github_collab_workshop
-- https://github.com/arockenberger/github_collab_workshop
-# Programming for Data Science
-*A short introduction for beginners*
-
-More details here later
+Collecting materials also from https://github.com/coderefinery/programming4ds and https://github.com/coderefinery/github-without-command-line. 
