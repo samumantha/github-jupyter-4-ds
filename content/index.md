@@ -1,149 +1,106 @@
-# LESSON NAME
+# Enhancing Data Support: Practical Reproducibility
 
-Intro
+TODO: Intro here to full workshop
 
-:::{prereq}
-prerequisites
-:::
+Practical reproducible research
+Support to support but also useful for own work
+Programming as first step - link to Josefines slides
+
+## What makes Programming better than Excel for handling research data?
+
+- **Automation**: Scripts can be reused and automated, reducing repetitive tasks.
+- **Scalability**: Excel struggles with large datasets, while e.g. pandas (a library in the Python ecosystem) handles millions of rows efficiently.
+- **Version control**: Code and data processing steps can be tracked using Git.
+- **Reproducibility**: Your workflow can be repeated or shared exactly by others.
+- **Visualization and analysis**: Seamless integration with powerful libraries like matplotlib and seaborn.
+- **Error prevention**: Fewer manual steps mean fewer opportunities for copy-paste mistakes.
+- **Integration**: Easily connects with databases, APIs, and other formats like JSON, HDF5, etc.
+
+
+
+## Prerequisites
+
+This is a lesson targeted at beginners, no prior knowledge of GitHub or Jupyter is needed. 
+
+To follow the exercises you need: 
+- A GitHub account {doc}`github-account` ([here](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/deleting-your-user-account)
+>   are instructions on how to remove it later if you do not wish to keep it)
+- Acess to a Jupyter Notebook (we will use CSC Noppe)
+
+## Learning outcomes
+
+- Discover best practices and understand the basic principles of using GitHub and Jupyter to support research reproducibility.
+- Learn how to utilize the basic features of Git repositories and Jupyter notebooks to enhance reproducible research in your institution.
+
+
+## Agenda for the workshop
 
 ```{csv-table}
-:delim: ;
-:widths: auto
-
-20 min ; {doc}`filename`
+---
+widths: auto
+---
+10 min , intro and practicalities
+10 min , {doc}`version-control-basics`
+15 min , {doc}`creating-using-web`
+5 min , {doc}`contributing`
+5 min , {doc}`group-work`
+10 min , **break**
+10 min, {doc}`documentation`
+20 min, {doc}`jupyter`
+15 min, {doc}`jupyter-exercise`
+10 min, {doc}`where-to-go`
 ```
+
+
+## Content
 
 ```{toctree}
-:caption: The lesson
-:maxdepth: 1
+---
+caption: Version Control with GitHub
+maxdepth: 1
+hidden:
+---
 
-episode.md
-```
+github-account
+version-control-basics
+creating-using-web
+contributing
+group-work
 
-```{toctree}
-:caption: Reference
-:maxdepth: 1
+---
+caption: Jupyter notebooks
+maxdepth: 1
+hidden:
+---
 
-quick-reference
-guide
-```
+documentation
+jupyter
+jupyter-exercise
 
-(learner-personas)=
+---
+caption: Summary
+maxdepth: 1
+hidden:
+---
 
-## Who is the course for?
+where-to-go
 
-## About the course
+---
+caption: Optional lessons
+maxdepth: 1
+hidden:
+---
 
-## See also
+doi-for-repo
+websites
+sharing-notebooks
+installing-python
 
-## Credits
-# Introduction to Programming for Data Science
-
-In this introductory-level workshop, we will learn the very basics of programming for data science.
-What does it mean to code? To "run a script"? Variables and functions?
-
-We will work in [Jupyter Notebooks](https://jupyter.org/) for its simplicity to get started writing
-code even without any previous experience. We will learn how to produce some **reproducible plots** using
-[Vega-Altair](https://altair-viz.github.io/) and in general how to find your way with programming in Python or R.
-
-
-## Who is the course for?
-
-- Somebody starting with Python or curious about Python.
-- Somebody who needs
-  to read, process, and plot data for their work or studies and would like to
-  try it out with Python.
-
-:::{prereq} Preparations
-- No programming language experience needed, we will start from zero and learn the basics together
-- Computer with network access
-- {doc}`installation`
-:::
-
-
-## What is not taught?
-
-- Version control. Although super useful it is outside of this workshop.
-- Python outside a Jupyter Notebook (e.g. on terminal, or VScode, or spyder) 
-- Python sets and tuples are only mentioned.
-- File input/output is only used via libraries and doing "own" file-I/O is only part
-  of optional material.
-- How to choose the right visualization format for the data at hand.
-- Python object oriented design.
-- Python packaging.
-- NumPy arrays.
-- Managing environments and installing Python packages.
-
-(episode-overview)=
-
-## Episode overview
-
-Introductory workshop (3h):
-- {doc}`intro_to_programming`
-- {doc}`jupyter`
-  [![nbviewer badge](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.org/github/coderefinery/data-visualization-python/blob/main/notebooks/first-notebook.ipynb)
-  [![colab badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/coderefinery/data-visualization-python/blob/main/notebooks/first-notebook.ipynb)
-  [![binder badge](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/coderefinery/data-visualization-python/HEAD?labpath=notebooks%2Ffirst-notebook.ipynb)
-- {doc}`python-basics`
-- {doc}`plotting`
-  [![nbviewer badge](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.org/github/coderefinery/data-visualization-python/blob/main/notebooks/plotting.ipynb)
-  [![colab badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/coderefinery/data-visualization-python/blob/main/notebooks/plotting.ipynb)
-  [![binder badge](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/coderefinery/data-visualization-python/HEAD?labpath=notebooks%2Fplotting.ipynb)
-- {doc}`plotting_R`
-
-More advanced topics:
-- More {doc}`plotting`
-- {doc}`tidy-data`
-- {doc}`customizing-plots`
-  [![nbviewer badge](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.org/github/coderefinery/data-visualization-python/blob/main/notebooks/customizing.ipynb)
-  [![colab badge](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/coderefinery/data-visualization-python/blob/main/notebooks/customizing.ipynb)
-  [![binder badge](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/coderefinery/data-visualization-python/HEAD?labpath=notebooks%2Fcustomizing.ipynb)
-- {doc}`gallery`
-- {doc}`sharing`
-
-Other:
-- {doc}`installation`
-
-
-```{toctree}
-:maxdepth: 1
-:caption: Episodes
-:hidden:
-
-intro_to_programming.md
-jupyter.md
-python-basics.md
-r-basics.md
-data.md
-plotting.md
-```
-
-```{toctree}
-:maxdepth: 1
-:caption: Reference
-
-installation.md
-colab.md
-```
-
-```{toctree}
-:maxdepth: 1
-:caption: Other materials
-
-tidy-data.md
-customizing-plots.md
-gallery.md
-sharing.md
-parsing-custom-format.md
 ```
 
 
-## Credit
 
-When preparing this lesson, we have reused these resources:
+## Inspiration for this lesson and further reading
 
-- <https://aaltoscicomp.github.io/python-for-scicomp/>
-- <https://datacarpentry.org/python-ecology-lesson/>
-- <https://swcarpentry.github.io/python-novice-inflammation/>
-- <https://coderefinery.github.io/jupyter/>
-- <https://coderefinery.github.io/data-visualization-python/>
+- TODO: CodeRefinery lesson DOIs
+- TODO: Skills4EOSC curriculum link
