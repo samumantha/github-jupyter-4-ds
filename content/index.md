@@ -66,7 +66,9 @@ version-control-basics
 creating-using-web
 contributing
 group-work
+```
 
+```{toctree}
 ---
 caption: Jupyter notebooks
 maxdepth: 1
@@ -76,7 +78,9 @@ hidden:
 documentation
 jupyter
 jupyter-exercise
+```
 
+```{toctree}
 ---
 caption: Summary
 maxdepth: 1
@@ -84,7 +88,9 @@ hidden:
 ---
 
 where-to-go
+```
 
+```{toctree}
 ---
 caption: Optional lessons
 maxdepth: 1
