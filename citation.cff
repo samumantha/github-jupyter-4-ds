@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this materials, please cite it as below."
+authors:
+  - family-names: Bast
+    given-names: Radovan
+  - family-names: Glerean
+    given-names: Enrico
+  - family-names: Wittke
+    given-names: Samantha
+title: "Enhancing Data Support: Practical Reproducibility"
+version: 2025-10-28
+date-released: 2025-10-28

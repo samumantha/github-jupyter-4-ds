@@ -1,6 +1,10 @@
 # Instructor's guide
 
-## Learning outcomes
+## Why we teach this lesson
+
+## Intended learning outcomes
+
+GitHub
 
 - Basics of Git/ version control
   - Commits
@@ -26,14 +30,21 @@
   - How to get DOIs for projects on GitHub
 - How to share websites/homepages using GitHub Pages
 
+Jupyter
+
 
 ## Timing
 
-First iteration of this workshop is given as 2 x (almost) 2 hours, one week
-apart.
-
-
-## Exercise repository for the "contributing" episode
+## Preparing exercises
 
 Generate an exercise repository from
 [https://github.com/coderefinery/template-contributing-exercise](https://github.com/coderefinery/template-contributing-exercise).
+
+## Other practical aspects
+
+## Interesting questions you might get
+
+## Typical pitfalls
+
+
+

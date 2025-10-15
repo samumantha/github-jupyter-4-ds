@@ -1,55 +1,89 @@
-# Collaborating and sharing using GitHub without command line
+# Enhancing Data Support: Practical Reproducibility
 
-This lesson provides a brief but hands-on introduction to Git and
-GitHub to exercise useful workflows within GitHub.  Git is a version
-control system which allows files and data to be tracked synchronized,
-which allows collaboration and reproducibility.
-GitHub is a popular website that stores these repositories.
+TODO: Intro here to full workshop
 
-**This tutorial avoids using the command line**. Instead, we will practice collaborating and
-sharing using the GitHub website.  Why?  Because for many cases, it is enough.  Especially
-if you are contributing to existing non-code projects, this may be the
-fastest, easiest way to do it.  Git and GitHub provide collaboration
-tools to all kinds of projects, and there are all kinds of good ways
-to use it.
+Practical reproducible research
+Support to support but also useful for own work
+Programming as first step - link to Josefines slides
 
-This serves as an introduction to Git.  After this lesson, you will
-both be able to use Git, and feel much more confident taking a
-command-line course Git course such as
-[CodeRefinery's git-intro
-course](https://coderefinery.github.io/git-intro/).  Check out our
-[other upcoming workshops](https://coderefinery.org/workshops/upcoming/).
+## What makes Programming better than Excel for handling research data?
 
-> ## Why GitHub
->
-> We will do this exercise on [GitHub](https://github.com) but also
-> [GitLab](https://gitlab.com) and [Bitbucket](https://bitbucket.org) allow
-> similar workflows and basically everything that we will discuss is transferable. With
-> this material and these exercises we do not endorse the company
-> [GitHub](https://github.com). We have chosen to demonstrate a number of
-> concepts using examples with [GitHub](https://github.com) because it is
-> currently the most popular web platform for hosting Git repositories and the chance is high
-> that you will interact with [GitHub](https://github.com)-based repositories even if you
-> choose to host your Git repository on another platform.
->
-> We also encourage course participants to use our new [Nordic research software repository platform hosted in Denmark](https://nordic-gitlab.deic.dk),
-> for more information see [https://coderefinery.org/repository/](https://coderefinery.org/repository/).
-{: .admonition}
+- **Automation**: Scripts can be reused and automated, reducing repetitive tasks.
+- **Scalability**: Excel struggles with large datasets, while e.g. pandas (a library in the Python ecosystem) handles millions of rows efficiently.
+- **Version control**: Code and data processing steps can be tracked using Git.
+- **Reproducibility**: Your workflow can be repeated or shared exactly by others.
+- **Visualization and analysis**: Seamless integration with powerful libraries like matplotlib and seaborn.
+- **Error prevention**: Fewer manual steps mean fewer opportunities for copy-paste mistakes.
+- **Integration**: Easily connects with databases, APIs, and other formats like JSON, HDF5, etc.
 
 
-## The lesson
+
+## Prerequisites
+
+This is a lesson targeted at beginners, no prior knowledge of GitHub or Jupyter is needed. 
+
+To follow the exercises you need: 
+- A GitHub account {doc}`github-account` ([here](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/deleting-your-user-account)
+>   are instructions on how to remove it later if you do not wish to keep it)
+- Acess to a Jupyter Notebook (we will use CSC Noppe)
+
+## Learning outcomes
+
+- Discover best practices and understand the basic principles of using GitHub and Jupyter to support research reproducibility.
+- Learn how to utilize the basic features of Git repositories and Jupyter notebooks to enhance reproducible research in your institution.
+
+
+## Agenda for the workshop
+
+```{csv-table}
+---
+widths: auto
+---
+10 min , intro and practicalities
+10 min , {doc}`version-control-basics`
+15 min , {doc}`creating-using-web`
+5 min , {doc}`contributing`
+5 min , {doc}`group-work`
+10 min , **break**
+10 min, {doc}`documentation`
+20 min, {doc}`jupyter`
+15 min, {doc}`jupyter-exercise`
+10 min, {doc}`where-to-go`
+```
+
+
+## Content
 
 ```{toctree}
 ---
-caption: The lesson
+caption: Version Control with GitHub
 maxdepth: 1
 hidden:
 ---
 
-basics
+github-account
+version-control-basics
 creating-using-web
 contributing
 group-work
+
+---
+caption: Jupyter notebooks
+maxdepth: 1
+hidden:
+---
+
+documentation
+jupyter
+jupyter-exercise
+
+---
+caption: Summary
+maxdepth: 1
+hidden:
+---
+
+where-to-go
 
 ---
 caption: Optional lessons
@@ -57,55 +91,16 @@ maxdepth: 1
 hidden:
 ---
 
-creating-using-desktop
-doi
+doi-for-repo
 websites
+sharing-notebooks
+installing-python
 
 ```
 
-```{csv-table}
----
-widths: auto
----
-10 min , {doc}`basics`
-15 min , {doc}`creating-using-web`
-5 min , {doc}`contributing`
-5 min , {doc}`group-work`
-```
 
 
-```{toctree}
----
-caption: Reference
-maxdepth: 1
----
+## Inspiration for this lesson and further reading
 
-quick-reference
-guide
-```
-
-
-## Preparations
-
-Not required:
-- Previous knowledge of Git or GitHub
-- Knowledge of the command line
-
-> Please prepare these before the workshop:
-> - Get a [GitHub account](https://github.com/join)
->   ([here](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/deleting-your-user-account)
->   are instructions on how to remove it later if you do not wish to keep it)
-> - Read our tips on attending [online](https://coderefinery.github.io/manuals/how-to-attend-online/) workshops
->   - [Zoom signals we use](https://coderefinery.github.io/manuals/zoom-mechanics/)
->   
->
-{: .prereq}
-
-Optional reading:
-- [Quickly get started with common tasks on GitHub](https://help.github.com/en/github/getting-started-with-github/quickstart)
-
-
-## Inspiration and further reading
-
-- CodeRefinery lessons on Git and GitHub (Day 1-3): https://coderefinery.org/lessons/#lessons-that-we-teach-in-our-tools-workshops
-- Skills4EOSC curriculum
+- TODO: CodeRefinery lesson DOIs
+- TODO: Skills4EOSC curriculum link

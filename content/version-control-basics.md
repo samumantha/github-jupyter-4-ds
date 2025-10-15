@@ -22,6 +22,28 @@
 {: .discussion}
 
 
+## Collaborating and sharing using GitHub without command line
+
+This lesson provides a brief but hands-on introduction to Git and
+GitHub to exercise useful workflows within GitHub.  Git is a version
+control system which allows files and data to be tracked synchronized,
+which allows collaboration and reproducibility.
+GitHub is a popular website that stores these repositories.
+
+**This tutorial avoids using the command line**. Instead, we will practice collaborating and
+sharing using the GitHub website.  Why?  Because for many cases, it is enough.  Especially
+if you are contributing to existing non-code projects, this may be the
+fastest, easiest way to do it.  Git and GitHub provide collaboration
+tools to all kinds of projects, and there are all kinds of good ways
+to use it.
+
+This serves as an introduction to Git.  After this lesson, you will
+both be able to use Git, and feel much more confident taking a
+command-line course Git course such as
+[CodeRefinery's git-intro
+course](https://coderefinery.github.io/git-intro/).  Check out our
+[other upcoming workshops](https://coderefinery.org/workshops/upcoming/).
+
 ## Version control
 
 ### Why version control?
