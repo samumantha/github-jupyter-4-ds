@@ -17,13 +17,13 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "LESSON NAME"
-copyright = "2020, The contributors"
-author = "The contributors"
-github_user = "coderefinery"
-github_repo_name = ""  # auto-detected from dirname if blank
-github_version = "main"
-conf_py_path = "/content/"  # with leading and trailing slash
+project = 'Introduction to Programming for Data Science'
+copyright = 'CodeRefinery project'
+author = 'Enrico Glerean'
+github_user = 'coderefinery'
+github_repo_name = 'programming4ds'  # auto-detected from dirname if blank
+github_version = 'main'
+conf_py_path = '/content/' # with leading and trailing slash
 
 # -- General configuration ---------------------------------------------------
 

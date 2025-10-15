@@ -12,3 +12,7 @@ But we are working on making these lessons citable: https://coderefinery.org/blo
 
 - https://github.com/lexnederbragt/github_collab_workshop
 - https://github.com/arockenberger/github_collab_workshop
+# Programming for Data Science
+*A short introduction for beginners*
+
+More details here later
