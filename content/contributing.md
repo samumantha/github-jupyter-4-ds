@@ -1,5 +1,22 @@
 # Contributing to existing repositories using pull requests
 
+TODO: Turn around: Non collaborator PR first then mention that one can also add collaborators. Maybe even put this as first exercise. Use stuff from this text:
+
+### Exercise
+
+- We first open an issue via the web interface
+  and describe our idea. In the issue we can collect feedback
+- We clone the exercise repository using GitHub Desktop
+- Create a new branch
+- Add the new file to the local repository
+- Commit and refer to the issue (e.g. here closing issue number 12: "this is the commit message, closes #12")
+- Try to publish that branch (you may not have write permissions to the repository on GitHub)
+- If you don't have write permissions: "Fork this repository", then try to publish the branch to the fork
+- "Create Pull Request"
+- If you forgot to refer to the issue in the commit, you can [refer to the issue](https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue) in the pull request
+
+
+
 In this session we will learn how to contribute to repositories which either
 belong to a group that you are part of or
 belong to others.
@@ -7,13 +24,11 @@ belong to others.
 We will do this in a progression from a small trivial fix to a change proposal
 and discuss the pros and cons.
 
-> ## Recap: different methods to "download" a repository
+> ## Different methods to "download" a repository
 >
-> - There is no need to download each file one by one.
-> - You can either download the repository as ZIP file (green button "Clone or download") if you do not plan to change files
+> - Download all files in a repository as ZIP file (green button "Clone or download") if you do not plan to change files
 >   and if you are sure that you don't need to browse the history of file changes.
-> - **Possibly better: you clone the repository** (green button on the web or through GitHub Desktop or using command line) so that you
->   can apply and track changes and possibly share them later.
+> - **Possibly better: you clone the repository** (green button on the web or through GitHub Desktop or using command line) so that you can apply and track changes and possibly share them later.
 > - Cloning copies not only the latest version but all snapshots and all branches and tags: entire history.
 {: .discussion}
 
@@ -56,8 +71,8 @@ In the last episodes we learned how to directly commit changes either via web
 or via the desktop and you need to be a collaborator (have write permissions)
 to be able to do that.
 
-In this exercise we will not change the `master` branch directly but
-we will submit a "pull request" (a **change proposal**) towards the `master` branch
+In this exercise we will not change the `main` branch directly but
+we will submit a "pull request" (a **change proposal**) towards the `main` branch
 for **code review**.
 
 **Exercise**: We will practice this by suggesting a change in a recipe book:
@@ -65,7 +80,7 @@ for **code review**.
 - Instructor shares an example repository and adds a volunteer learner as collaborator
 - Learner shares screen and edits `recipes.txt` via web (click on the edit pen)
 - We modify or extend one recipe from the example repository together by guiding the volunteer learner
-- We do not commit directly to `master` but rather "Create a new branch for this commit and start a pull request."
+- We do not commit directly to `main` but rather "Create a new branch for this commit and start a pull request."
 - We choose a meaningful branch name (it can be useful to prefix it with your name so that we know who this branch belongs to)
 
 <img src="{{ site.baseurl }}/img/contributing/propose-file-change.png" width="800px" style="border:2px solid #000000;">
@@ -88,19 +103,16 @@ for **code review**.
 
 ---
 
-To make sure that *all* changes of the `master` branch are reviewed and nobody
+To make sure that *all* changes of the `main` branch are reviewed and nobody
 can push commits to it directly, it can be useful to "protect" branches.
 
 - "Settings", then "Branches", then "Add rule":
 
 <img src="{{ site.baseurl }}/img/contributing/branch-protection.png" width="800px" style="border:2px solid #000000;">
 
-> ## Discussion
->
-> - Protecting the `master` branch "forces" all changes to it to be reviewed first.
->   **We recommend this for group repositories**.
->   Discuss the advantages/disadvantages of this.
-{: .discussion}
+Protecting the `main` branch "forces" all changes to it to be reviewed first.
+**We recommend this for group repositories**.
+
 
 ---
 
@@ -108,7 +120,7 @@ can push commits to it directly, it can be useful to "protect" branches.
 
 Submitting a change proposal as external contributor (we assume you are not added
 as "collaborator" and thus have no write-permissions to a repository) looks very similar
-to submitting a "pull request" to a repository with a protected `master` branch.
+to submitting a "pull request" to a repository with a protected `main` branch.
 Only this time you have no other choice than "Propose file change".
 
 Let's try this with one participant who has not been added as collaborator
@@ -157,6 +169,12 @@ We can practice how a conflict looks and how to resolve it:
 > - What can we do to avoid conflicts?
 {: .discussion}
 
+
+### Bonus exercise
+
+- Send a pull request with a typo/mistake in it and adjust the pull request with a subsequent commit. Discuss
+  how adjusting pull requests can be a useful mechanism.
+
 ---
 
 > ## Summary
@@ -165,7 +183,7 @@ We can practice how a conflict looks and how to resolve it:
 > - If you track and collaborate on text files it can be useful to wrap lines. If the entire
 >   paragraph is one long line, if will be more difficult to see what changed,
 >   and you risk seeing more conflicts.
-> - Protecting the `master` branch and insisting on every change going
+> - Protecting the `main` branch and insisting on every change going
 >   through a pull request can be useful to get feedback on your changes
 >   and to improve knowledge transfer.
 > - For controversial changes it can

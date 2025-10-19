@@ -1,20 +1,35 @@
 # Enhancing Data Support: Practical Reproducibility
 
-TODO: Intro here to full workshop
+This is part 2/2 of the webinar/workshop series on "Enhancing data support: Reproducibility" held at CSC in October 2025.
 
-Practical reproducible research
-Support to support but also useful for own work
-Programming as first step - link to Josefines slides
+Part 1 introduced the concept of reproducibility in research and highlighted its importance.
 
-## What makes Programming better than Excel for handling research data?
+This workshop will discuss two tools often involved when discussing reproducible computational reasearch: GitHub and Jupyter.
 
-- **Automation**: Scripts can be reused and automated, reducing repetitive tasks.
-- **Scalability**: Excel struggles with large datasets, while e.g. pandas (a library in the Python ecosystem) handles millions of rows efficiently.
-- **Version control**: Code and data processing steps can be tracked using Git.
-- **Reproducibility**: Your workflow can be repeated or shared exactly by others.
-- **Visualization and analysis**: Seamless integration with powerful libraries like matplotlib and seaborn.
-- **Error prevention**: Fewer manual steps mean fewer opportunities for copy-paste mistakes.
-- **Integration**: Easily connects with databases, APIs, and other formats like JSON, HDF5, etc.
+The time in this workshop is too short to give a full practical introduction of the tools however, therefore the learning objectives are:
+
+- Discover best practices and understand the basic principles of using GitHub and Jupyter to support research reproducibility.
+- Get the idea how to utilize the basic features of Git repositories and Jupyter notebooks 
+
+We mainly want to provide a safe environment to experience these tools and give you some pointers as to when and where they are useful to inftroduce researchers to, as well as how they might be useful in your own work, even if you are not programming yourself.
+
+# Introduction to todays topics
+
+We already heard that reproducible research involving computers has many components. 
+
+Let's revisit them: 
+
+TODO: Turing way image of data, tools, code, results
+
+In this workshop we will focus on the "code" part, how can we collaborate and share the code we are working on. 
+
+We will not cover how to share code with a DOI, code licensing, environment sharing or go into depth of the topic. 
+
+More we will look into two specific tools:
+
+- GitHub
+- Jupyter
+
 
 
 
@@ -39,15 +54,14 @@ To follow the exercises you need:
 ---
 widths: auto
 ---
-10 min , intro and practicalities
-10 min , {doc}`version-control-basics`
+10 min , Intro and practicalities
+20 min , {doc}`version-control-basics`
 15 min , {doc}`creating-using-web`
 5 min , {doc}`contributing`
 5 min , {doc}`group-work`
 10 min , **break**
-10 min, {doc}`documentation`
 20 min, {doc}`jupyter`
-15 min, {doc}`jupyter-exercise`
+25 min, {doc}`jupyter-exercise`
 10 min, {doc}`where-to-go`
 ```
 
@@ -75,7 +89,6 @@ maxdepth: 1
 hidden:
 ---
 
-documentation
 jupyter
 jupyter-exercise
 ```

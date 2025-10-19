@@ -2,14 +2,14 @@
 
 ```{questions}
 - What is version control and why?
-- What are commits and branches?
-- What are forks and clones?
+- What are common terms used around version control?
 ```
 
 ```{objectives}
-- Get a mental representation for commits and branches.
-- Understand the difference between forks and clones.
+- Get an idea of why version control can be useful.
 - Understand the difference between Git and GitHub.
+- Get a mental representation for commits and branches.
+
 ```
 
 > ## What we will not cover
@@ -22,46 +22,24 @@
 {: .discussion}
 
 
-## Collaborating and sharing using GitHub without command line
-
-This lesson provides a brief but hands-on introduction to Git and
-GitHub to exercise useful workflows within GitHub.  Git is a version
-control system which allows files and data to be tracked synchronized,
-which allows collaboration and reproducibility.
-GitHub is a popular website that stores these repositories.
-
-**This tutorial avoids using the command line**. Instead, we will practice collaborating and
-sharing using the GitHub website.  Why?  Because for many cases, it is enough.  Especially
-if you are contributing to existing non-code projects, this may be the
-fastest, easiest way to do it.  Git and GitHub provide collaboration
-tools to all kinds of projects, and there are all kinds of good ways
-to use it.
-
-This serves as an introduction to Git.  After this lesson, you will
-both be able to use Git, and feel much more confident taking a
-command-line course Git course such as
-[CodeRefinery's git-intro
-course](https://coderefinery.github.io/git-intro/).  Check out our
-[other upcoming workshops](https://coderefinery.org/workshops/upcoming/).
-
 ## Version control
 
 ### Why version control?
 
 Version control is the answer to these questions:
-- "It broke ... hopefully I have a working version somewhere?"
-- "Can you please send me the latest version?"
-- "Where is the latest version?"
-- "Which version are you using?"
-- "Which version have the authors used in the paper I am trying to reproduce?"
-- "Found a bug! Since when was it there?"
-- "I am sure it used to work. When did it change?"
+
+- “It broke... hopefully I have a working version somewhere?”
+- "Where is the latest version, and which one should I trust?"
+- "I am sure it used to work. What changed, when, and why?"
+- "When did this problem appear?"
+- “Something looks different — what was updated, and who did it?”
+
+-> Version control is simply a reliable way to remember, explain, and reproduce the evolution of digital research materials.
 
 ### What are version control tools?
 
 - Version control is a tool that can **record snapshots of a project**.
-- You can think of version control like regularly taking a photo of your work
-  (movie sets take regular polaroids to be able to recreate a scene the next day).
+- You can think of version control like regularly taking a photo of your work.
 
 ```{figure} /img/basics/commits-snapshots.png
 ---
@@ -70,7 +48,6 @@ class: with-border
 
 Snapshots (**commits**) in the [EHT-imaging](https://github.com/achael/eht-imaging) repository.
 ```
-
 
 ### What we typically like to version control (or "snapshot")?
 
@@ -110,9 +87,15 @@ Snapshots (**commits**) in the [EHT-imaging](https://github.com/achael/eht-imagi
 - Not the only service that provides this (other popular services are
 [GitLab](https://about.gitlab.com/) and [Bitbucket](https://bitbucket.org)).
 
-**GitHub Desktop**
-- Graphical user interface to Git and GitHub which runs locally on your computer.
-- There are other tools that can do this, too (e.g. [Sourcetree](https://www.sourcetreeapp.com/)).
+
+
+**Git integration**
+- Many other tool also provide a git integration. Commonly used by researchers e.g. [VSCode](), [RStudio](), [GitHub Desktop](), [JupyterLab](), [Overleaf]() mostly hiding git complexity, while providing same benefit. 
+
+
+> You may have seen Git(Hub) many tutorials for git on the command line. We will stick to GitHub website.
+> Why?  Because for many cases, it is enough.  Especially if you are contributing to existing non-code projects, this may be the
+fastest, easiest way to do it.  Git and GitHub provide collaboration tools to all kinds of projects, and there are all kinds of good ways to use it.
 
 ---
 
@@ -125,6 +108,8 @@ Snapshots (**commits**) in the [EHT-imaging](https://github.com/achael/eht-imagi
 - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
 - **forking**: Taking a copy of a repository (which is typically not yours) - your
   copy (fork) stays on GitHub and you can make changes to your copy.
+- **Pull request**:  XX
+- **Issue**: XX
 
 ```{figure} /img/basics/file-view.png
 ---
@@ -162,25 +147,11 @@ of people who are contributing and sharing code.
 
 ### Interesting repositories to explore these concepts
 
-- Event Horizon Telescope imaging software
-  - Repository: <https://github.com/achael/eht-imaging>
-  - Commits, branches, forks: <https://github.com/achael/eht-imaging/network>
+
 - [Activity inequality study](http://activityinequality.stanford.edu/)
   - Contains data and code necessary to create figures from their article.
   - Data: <https://github.com/timalthoff/activityinequality/tree/master/data>
-- FiveThirtyEight story [Why We’re Sharing 3 Million Russian Troll Tweets](https://fivethirtyeight.com/features/why-were-sharing-3-million-russian-troll-tweets/)
-  - Contains data and readme file, no code.
-  - Data: <https://github.com/fivethirtyeight/russian-troll-tweets>
-- The NY Times Coronavirus (Covid-19) Data in the United States
-  - Contains data, readme, license, but no code.  As of 2020.april,
-    being updated every day.
-  - Data: <https://github.com/nytimes/covid-19-data>
-  - Website: <https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html>
-- CSV exports of the Getty Provenance Index
-  - Data: <https://github.com/thegetty/provenance-index-csv>
 - Entire books are written using Git/GitHub:
-  - <https://github.com/rust-lang/book>
-  - <https://github.com/ropensci/dev_guide>
   - <https://github.com/alan-turing-institute/the-turing-way>
 - Papers under open review:
   - <https://github.com/openjournals/joss-reviews/issues>
@@ -199,6 +170,7 @@ of people who are contributing and sharing code.
 >   everything fundamentally owned by individuals who manage sharing as-needed:
 >   with Git you can easily have collaboration be the default.
 > - It is possible to serve websites directly from a repository.
+
 {: .discussion}
 
 > ## Discussion: workflows without version control
