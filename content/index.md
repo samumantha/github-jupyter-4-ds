@@ -89,6 +89,7 @@ maxdepth: 1
 hidden:
 ---
 
+noppe
 jupyter
 jupyter-exercise
 ```
