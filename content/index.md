@@ -1,8 +1,11 @@
 # Enhancing Data Support: Practical Reproducibility
 
-:::{admonition}
-This material is **work in progress**, except for this index page and the setup pages, please do not trust anything, yet. 
-:::
+
+> ## WIP
+>
+> This material is **work in progress**, except for this index page and the setup pages, please do not trust anything, yet. 
+{: .discussion}
+
 
 This is part 2/2 of the webinar/workshop series on "Enhancing data support: Reproducibility" held at CSC in October 2025.
 
