@@ -1,51 +1,33 @@
 # Enhancing Data Support: Practical Reproducibility
 
+:::{admonition}
+This material is **work in progress**, except for this index page and the setup pages, please do not trust anything, yet. 
+:::
+
 This is part 2/2 of the webinar/workshop series on "Enhancing data support: Reproducibility" held at CSC in October 2025.
 
 Part 1 introduced the concept of reproducibility in research and highlighted its importance.
 
 This workshop will discuss two tools often involved when discussing reproducible computational reasearch: GitHub and Jupyter.
 
-The time in this workshop is too short to give a full practical introduction of the tools however, therefore the learning objectives are:
-
-- Discover best practices and understand the basic principles of using GitHub and Jupyter to support research reproducibility.
-- Get the idea how to utilize the basic features of Git repositories and Jupyter notebooks 
+However, the time in this workshop is too short to give a full practical introduction of the tools.
 
 We mainly want to provide a safe environment to experience these tools and give you some pointers as to when and where they are useful to inftroduce researchers to, as well as how they might be useful in your own work, even if you are not programming yourself.
-
-# Introduction to todays topics
-
-We already heard that reproducible research involving computers has many components. 
-
-Let's revisit them: 
-
-TODO: Turing way image of data, tools, code, results
-
-In this workshop we will focus on the "code" part, how can we collaborate and share the code we are working on. 
-
-We will not cover how to share code with a DOI, code licensing, environment sharing or go into depth of the topic. 
-
-More we will look into two specific tools:
-
-- GitHub
-- Jupyter
-
-
-
 
 ## Prerequisites
 
 This is a lesson targeted at beginners, no prior knowledge of GitHub or Jupyter is needed. 
 
-To follow the exercises you need: 
-- A GitHub account {doc}`github-account` ([here](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/deleting-your-user-account)
->   are instructions on how to remove it later if you do not wish to keep it)
-- Acess to a Jupyter Notebook (we will use CSC Noppe)
+If you would like to get your hands in the dirt and play around with the tools of this webinar, please come prepared with:
+
+- A GitHub account (https://samumantha.github.io/github-jupyter-4-ds/github-account/)
+- Access to our Noppe workspace (https://samumantha.github.io/github-jupyter-4-ds/noppe/); If you have HAKA, VIRTU or CSC account, use those methods to log in, if you do not know what these are or do not have one already, you do not have to do anything about it. We will fix during the workshop, if you want to try it.
 
 ## Learning outcomes
 
-- Discover best practices and understand the basic principles of using GitHub and Jupyter to support research reproducibility.
-- Learn how to utilize the basic features of Git repositories and Jupyter notebooks to enhance reproducible research in your institution.
+- Discover best practices and understand the basic principles of version control and interactive computing platforms to support computational reproducibility.
+- Utilize the basic features of GitHub and Jupyter.
+- Know where those tools can be run and found.
 
 
 ## Agenda for the workshop
@@ -122,5 +104,5 @@ installing-python
 
 ## Inspiration for this lesson and further reading
 
-- TODO: CodeRefinery lesson DOIs
-- TODO: Skills4EOSC curriculum link
+- TODO: Link to CodeRefinery lesson DOIs
+- TODO: Link to Skills4EOSC curriculum link
