@@ -30,9 +30,6 @@ More we will look into two specific tools:
 - GitHub
 - Jupyter
 
-
-
-
 ## Prerequisites
 
 This is a lesson targeted at beginners, no prior knowledge of GitHub or Jupyter is needed. 
