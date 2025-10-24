@@ -1,16 +1,20 @@
----
-format: revealjs
----
+class: center, middle, gray-background
 
-## Enhancing Data Support: Practical Reproducibility
+<img src="img/slides/csc.png"
+     alt="CSC logo"
+     style="height: 250px;"/>
+
+# Enhancing Data Support: Practical Reproducibility
 
 Samantha Wittke
-CSC - IT Center for Science
+
+#### CSC - IT Center for Science
 
 ---
 
-## Outline
+# Outline
 
+.left-column50[
 Intro and practicalities
 
 GitHub
@@ -19,7 +23,9 @@ GitHub
 - Creating a repository
 - Contributing to a repository
 - Version control wrap up
+]
 
+.right-column50[
 Break 
 
 Jupyter 
@@ -28,32 +34,76 @@ Jupyter
 - Basic features
 
 Where to go from here
+]
 
 ---
 
-## Questions
+# Questions
 
-Interrupt at any time, Zoom chat or raise hand
+.left-column50[
+Ask at any time
+-> Zoom chat or raise hand
+]
+
+.right-column50[
+
+<img src="img/slides/question.svg"
+     alt="CSC logo"
+     style="height: 150px;"/>
+
+<img src="img/slides/handsup.svg"
+     alt="CSC logo"
+     style="height: 150px;"/>
+
+
+]
 
 ---
 
-## Chatter
+# Chatter
 
-TODO: describe
+.left-column60[
+
+1. Type your response into the chat, but WAIT to hit enter
+2. Listen for the countdown (three, two, one, CHAT!)
+3. Hit enter and watch the responses!
+
+]
+
+.right-column30[
+
+<img src="img/slides/chat.svg"
+     alt="CSC logo"
+     style="height: 150px;"/>
+
+]
 
 ---
 
-## Two perspectives
+# Two perspectives 
 
-- Researcher
-- Research support
+
+.left-column50[
+Researcher who codes
+]
+
+.right-column50[
+Research support
+]
 
 ---
 
 
-## Reproducibility + Replicability
+<img src="img/slides/practice.png"
+     alt="CSC logo"
+     style="height: 100%;"/>
 
-TODO: Link to Slides from Josefine 18 or 39
+---
+
+<img src="img/slides/practice_hl.png"
+     alt="CSC logo"
+     style="height: 100%;"/>
+
 
 ---
 
@@ -61,7 +111,7 @@ TODO: Overview: In terms of code, what needs to be shared/documented to enable r
 
 ---
 
-Code that works and is shared is not the same as reproducible code
+.quote[Code that works and is shared is not the same as reproducible code]
 
 ---
 
@@ -139,6 +189,10 @@ You can clone from there too
 4. Push: submit snapshots to GitHub
 
 - Pull: Get latest version from GitHub
+
+---
+
+![](https://raw.githubusercontent.com/hendrixroa/in-case-of-fire-1/master/in_case_of_fire.png)
 
 ---
 
@@ -239,6 +293,10 @@ Accessible?
 Interoperable?
 Reusable?
 
+=> GitHub link is not persistent!
+-> Connection to Zenodo
+
+
 ---
 
 ## Motivation to use Git(Hub)
@@ -251,9 +309,132 @@ Reusable?
 
 ---
 
-## Summary
+## Summary - GitHub
 
 GitHub: Collaborate and share with others and yourself
 
 ---
+
+## Chatter
+
+---
+
+## Break
+
+---
+
+## Jupyter
+
+Tool for programming / coding
+
+---
+
+## Executable notebook
+
+Jupyter, Pluto, Quarto, ...
+
+---
+
+## Researcher perspective
+
+Exploration (code, notes, viz)
+
+I 
+
+Paper
+
+I 
+
+Sharing narrative
+
+I 
+
+Executable Notebook to test
+
+---
+
+## "Coding"
+
+TODO: Screenshot of a terminal with some python code
+
+---
+
+## Script: summary
+
+TODO: screenshot of a script
+
+---
+
+## Notebooks: interactive
+
+TODO: Screenshot of Jupyter
+
+---
+
+## Demo: Protopyping / Exploration
+
+---
+
+## Teaching
+
+- prefilled
+- exercises as rendered text
+- automatic checks 
+
+---
+
+## Sharing
+
+- Tutorial
+- Walkthrough
+-> Let others explore
+
+---
+
+## Static vs executable 
+
+- share to view,e.g. on GitHub
+- share to execute and change
+
+---
+
+## Sharing executable
+
+Noppe
+Binder
+
+-> Cloud
+
+---
+
+## Reproducibility
+
+Code -> supports good practices, modularity
+Environment (Jupyter is part of that) needed
+
+---
+
+## Under the hood
+
+IPYNB -> JSON
+
+Version control possible, but more limited benefits
+
+---
+
+## Moving away from Jupyter
+
+- Endpoint
+- HPC Support
+
+Limits: 
+- use as tool from terminal
+- multi parameter/data -> efficiency
+
+---
+
+## Summary
+
+Great tool for prototyping or sharing alongside publications
+
 
