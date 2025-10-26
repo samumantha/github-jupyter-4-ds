@@ -1,6 +1,6 @@
 class: center, middle, gray-background
 
-<img src="img/slides/csc.png"
+<img src="img/slides/CSC.png"
      alt="CSC logo"
      style="height: 250px;"/>
 
@@ -38,6 +38,16 @@ Where to go from here
 
 ---
 
+class: center, middle
+
+<img src="img/slides/reproducibility.jpg"
+     alt="A person showing another person what steps to take to make their data research reproducible. There is a path with several steps- Here is my data - Here are my tools - Here is my code - Here are my results"
+     style="height: 500px;"/>
+
+.cite[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <https://zenodo.org/records/13882307>]
+
+---
+
 # Questions
 
 .left-column50[
@@ -47,6 +57,8 @@ Ask at any time
 
 .right-column50[
 
+.center[
+
 <img src="img/slides/question.svg"
      alt=""
      style="height: 150px;"/>
@@ -55,6 +67,7 @@ Ask at any time
      alt=""
      style="height: 150px;"/>
 
+]
 
 ]
 
@@ -80,15 +93,18 @@ Ask at any time
 
 ---
 
-# Two perspectives 
-
+class: middle
 
 .left-column50[
-Researcher who codes
+.center[
+## Researcher who codes
+]
 ]
 
 .right-column50[
-Research support
+.center[
+## Research support
+]
 ]
 
 ---
@@ -96,13 +112,13 @@ Research support
 
 <img src="img/slides/practice.png"
      alt=""
-     style="height: 100%;"/>
+     style="height: 400px;"/>
 
 ---
 
 <img src="img/slides/practice_hl.png"
      alt=""
-     style="height: 100%;"/>
+     style="height: 400px;"/>
 
 
 ---
@@ -529,26 +545,34 @@ style="height: 150px;"/>
 
 ## Sharing
 
-TODO: GitHub logo, Binder, Noppe, Collab
+.left-column50[
 
-- share to view,e.g. on GitHub
-- share to execute and change
+<img src="img/slides/github.svg"
+alt=""
+style="height: 150px;"/>
 
----
+Share to view
 
-## Sharing executable
+]
 
-Noppe
-Binder
+.right-column50[
 
--> Cloud
+
+<img src="img/slides/running_nb_online.svg"
+alt=""
+style="height: 150px;"/>
+
+Share to execute and change in the cloud
+
+]
 
 ---
 
 ## Reproducibility
 
-Code -> supports good practices, modularity
-Environment (Jupyter is part of that) needed
+Jupyter supports code modularity + documentation!
+
+Needs computing environment information.
 
 ---
 
@@ -560,32 +584,92 @@ style="height: 150px;"/>
 
 IPYNB -> JSON
 
+---
+
+## Jupyter diff
+
+<img src="img/slides/jupyter_diff.png"
+alt=""
+style="height: 150px;"/>
+
 Version control possible, but more limited benefits
 
 ---
 
-## Moving away from Jupyter
+## Moving away from Jupyter?
 
-- Endpoint
-- HPC Support
+A Jupyter notebook ...
 
-Limits: 
-- use as tool from terminal
-- multi parameter/data -> efficiency
+- is super useful in protoyping.
+- can even be the endpoint.
+- can be used in high performance computing environments.
+
+You may want to switch to scripts when ...
+
+- building a (command line/graphical) tool.
+- you need to run it with multiple datasets/parameters.
+- efficiency is the goal.
+
+---
+
+## Jupyter ecosystem
+
+**Notebook** : Code + markdown cells -> .ipynb
+
+**Lab** : Interface to view ipynb files, layout, extensions
+
+**Hub** : Jupyter for servers, multiple users
 
 ---
 
 ## Summary
 
-Great tool for prototyping or sharing alongside publications
+TODO
 
+---
+
+## Where to go from here ...
+
+- Play around with GitHub
+     - Contribute to our recipe book
+     - Create your own repo
+     - Try things out with colleagues
+- Play around with Jupyter
+     - Noppe workspace available for a while
+     - Check out other Noppe applications
+     - Install on your own computer
+- Learn more
+
+---
+
+## CodeRefinery
+
+<img src="img/slides/coderefinery.png"
+alt=""
+style="height: 150px;"/>
+
+Tools and techniques for researchers who code...
+
+3 half days of Git (-Hub, VSCode, command line)
++
+3 half days of reproducible research (computing environments and workflows), documentation, social coding (sharing and licensing), modular code development, jupyter (widgets and other tricks) and automated testing.
+
+- [Materials](https://coderefinery.org/lessons/#lessons-that-we-teach-in-our-tools-workshops)
+- [Recordings](https://www.youtube.com/@coderefinery) 
+- Next workshop in March '26: Sign up for [newsletter](https://coderefinery.org/about/newsletter/)
 
 ---
 
 # Acknowledgement
 
-CodeRefinery lesson
+Reuse and inspiration was drawn from CodeRefinery and Skills4EOSC.
 
-Logos are companies own
+CodeRefinery lessons: 
+- Introduction to and collaborative git
+- [Git without the command line](https://coderefinery.github.io/github-without-command-line/)
+- Jupyter
+- [Programming for Data Stewards](https://coderefinery.github.io/programming4ds/)
 
-Icons from UXWing
+Logos are belong to the companies they represent
+
+Icons used are from UXWing
