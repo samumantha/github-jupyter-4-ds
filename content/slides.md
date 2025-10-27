@@ -4,11 +4,15 @@ class: center, middle, gray-background
      alt="CSC logo"
      style="height: 250px;"/>
 
-# Enhancing Data Support: Practical Reproducibility
+## Enhancing Data Support: Practical Reproducibility
 
 Samantha Wittke
 
-#### CSC - IT Center for Science
+### CSC - IT Center for Science
+
+<img src="img/slides/CCby.png"
+     alt=""
+     style="height: 50px;"/>
 
 ---
 
@@ -26,6 +30,14 @@ GitHub
 ]
 
 .right-column50[
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 Break 
 
 Jupyter 
@@ -610,7 +622,7 @@ Branch
 <br>
 <br>
 
-Which of the concepts would need more explanation?
+What will you use GitHub for in the future?
 ]
 
 .right-column30[
@@ -638,7 +650,7 @@ class: center, middle
 alt=""
 style="height: 350px;"/>
 
-.quote[A tool for people who write code]
+.quote[A tool for people who write code in Python, R or Julia]
 
 ---
 
@@ -655,6 +667,8 @@ style="height: 350px;"/>
 ...
 
 ---
+
+class: inverse
 
 # Researcher perspective
 
@@ -850,10 +864,35 @@ You may want to switch to scripts when ...
 
 ---
 
+class: middle, center
+
 # Summary
 
 .quote[Jupyter is a helpful tool in the beginning and end of the research process, and can also be used throughout.]
 
+---
+
+# Chatter
+
+.left-column50[
+
+<br>
+<br>
+
+What could you imagine using Jupyter for in the future?
+
+]
+
+.right-column30[
+
+<br>
+<br>
+
+<img src="img/slides/chat.svg"
+     alt=""
+     style="height: 150px;"/>
+
+]
 ---
 
 # Where to go from here ...
@@ -893,10 +932,11 @@ Tools and techniques for researchers who code...
 - [Materials](https://coderefinery.org/lessons/#lessons-that-we-teach-in-our-tools-workshops)
 - [Recordings](https://www.youtube.com/@coderefinery) 
 - Next workshop in March '26: Sign up for [newsletter](https://coderefinery.org/about/newsletter/)
+- **Bring your own classroom**, contact `support@coderefinery.org`
 
 ---
 
-# Acknowledgement
+# Acknowledgements
 
 Reuse and inspiration was drawn from CodeRefinery and Skills4EOSC.
 
