@@ -50,6 +50,20 @@ Where to go from here
 
 ---
 
+# (Optional) Prerequisites for following along 
+
+<br>
+<br>
+
+- [GitHub account](https://samumantha.github.io/github-jupyter-4-ds/github-account/)
+
+<br>
+<br>
+
+- [Access to Noppe](https://samumantha.github.io/github-jupyter-4-ds/noppe/)
+
+---
+
 class: center, middle
 
 <img src="img/slides/reproducibility.jpg"
@@ -105,6 +119,30 @@ Ask at any time
 
 ---
 
+# Chatter - Let's practice!
+
+.left-column60[
+
+<br>
+<br>
+
+
+One word to describe your morning today?
+
+
+
+]
+
+.right-column30[
+
+<img src="img/slides/chat.svg"
+     alt=""
+     style="height: 150px;"/>
+
+]
+
+---
+
 # Today: Two perspectives
 
 <br>
@@ -133,6 +171,8 @@ class: middle, center
      alt=""
      style="width: 750px;"/>
 
+.cite[Josefine Nordlings slide from part 1 of this training]
+
 ---
 
 class:middle
@@ -147,7 +187,7 @@ class:middle
 class: middle, center
 
 
-<img src="img/slides/practice.png"
+<img src="img/slides/reproducible-research.jpg"
      alt=""
      style="width: 750px;"/>
 
@@ -244,6 +284,25 @@ Git: Command line or inbuilt (VSCode etc)
 
 ---
 
+# Did you know?
+
+<br>
+<br>
+
+**In-house GitLab**: Host your own repositories safely within the walls of your organisation.
+
+<br>
+<br>
+
+Collaboration in the Nordics: [Nordic GitLab hosted by DeIC](https://coderefinery.org/repository/)
+
+<br>
+<br>
+
+Why do we teach GitHub? ➡ Most used, beyond borders
+
+---
+
 # Repositories - a place to store
 
 <br>
@@ -306,7 +365,7 @@ Git: Command line or inbuilt (VSCode etc)
 
 1. Clone: get a copy to my computer
 2. Work on it, make updates, ...
-3. Commit: take snapshots of units of work (one or many)
+3. Add, Commit: take snapshots of units of work (one or many)
 4. Push: submit snapshots to GitHub
 
 .quote[Pull: Get latest version from GitHub]
@@ -315,7 +374,6 @@ Git: Command line or inbuilt (VSCode etc)
 
 1. Work on it, make updates, ...
 2. Commit: take snapshots of units of work (one)
-
 
 
 ---
@@ -359,6 +417,7 @@ History
 Annotate
 ]
 
+See also: <https://samumantha.github.io/github-jupyter-4-ds/creating-repo-using-web/>
 
 ---
 
@@ -378,7 +437,7 @@ Annotate
 
 ---
 
-# GitHub pull request 
+# GitHub pull request
 
 .center[
 
@@ -473,6 +532,38 @@ Full workflow **local**:
 
 ---
 
+## Demo - exploring an existing repo
+
+<br>
+<br>
+<br>
+
+- History
+- Branches
+- Forks
+- Issues
+- Pull requests
+
+➡ <https://github.com/the-turing-way/the-turing-way/>
+
+---
+
+# Demo - contribute
+
+<br>
+<br>
+<br>
+
+- Issue
+- Fork / Branch
+- Work
+- Pull request
+
+New file vs changing file
+
+➡ <https://github.com/samumantha/data_support_recipe_book>
+
+---
 
 # What to track using Git(Hub)?
 
@@ -514,37 +605,6 @@ style="height: 150px;"/>
 - Manuscripts (Git is great for collaborating/sharing LaTeX or Quarto manuscripts)
 
 ---
-
-## Demo - exploring an existing repo
-
-<br>
-<br>
-<br>
-
-- History
-- Branches
-- Forks
-- Issues
-- Pull requests
-
----
-
-# Demo - contribute
-
-<br>
-<br>
-<br>
-
-- Issue
-- Fork / Branch
-- Work
-- Pull request
-
-New file vs changing file
-
----
-
-
 
 # GitHub and reproducibility
 
@@ -622,7 +682,8 @@ Branch
 <br>
 <br>
 
-What will you use GitHub for in the future?
+Do you see any usecases for your work and GitHub in the future?
+
 ]
 
 .right-column30[
@@ -740,6 +801,14 @@ style="height: 250px;"/>
 
 ---
 
+# Good practice
+
+<img src="img/slides/run_all.png"
+alt=""
+style="width: 450px;"/>
+
+---
+
 # Demo usecase: Teaching
 
 <br>
@@ -749,6 +818,9 @@ style="height: 250px;"/>
 - Prefilled
 - Exercises as rendered text
 - Automatic checks
+
+➡ <https://github.com/csc-training/python-introduction/blob/gh-pages/notebooks/examples/1%20-%20Introduction.ipynb>
+➡ <https://github.com/csc-training/PythonGIS_CSC/blob/master/Raster/Seurasaari_trees.ipynb>
 
 ---
 
@@ -760,6 +832,10 @@ style="height: 250px;"/>
 
 Tutorial / Walkthrough
 ➡ Let others explore
+
+➡ <https://documentation.dataspace.copernicus.eu/APIs/openEO/openeo-community-examples/python/ParcelDelineation/Parcel%20delineation.html>
+
+➡ <https://github.com/eu-cdse/notebook-samples/blob/main/geo/stac_ndvi.ipynb>
 
 ---
 
@@ -776,7 +852,7 @@ style="height: 200px;"/>
 
 <br>
 
-Share to view
+GitHub, Websites: Share to view
 
 ]
 
@@ -790,9 +866,24 @@ style="height: 200px;"/>
 
 <br>
 
-Share to execute and change in the cloud
+Google Colab, Noppe, Google Colab: Share to execute and change in the cloud
 
 ]
+
+---
+
+# Did you know?
+
+<br>
+<br>
+
+**Noppe**: CSC service free of charge for Finnish researchers
+
+➡ Readymade notebooks
+➡ Teaching
+➡ Collaboration
+
+.quote[Brought to you by ministry of education and culture!]
 
 ---
 
@@ -864,6 +955,7 @@ You may want to switch to scripts when ...
 
 ---
 
+
 class: middle, center
 
 # Summary
@@ -879,7 +971,7 @@ class: middle, center
 <br>
 <br>
 
-What could you imagine using Jupyter for in the future?
+How might understanding Jupyter support your work in the future?
 
 ]
 
@@ -893,6 +985,7 @@ What could you imagine using Jupyter for in the future?
      style="height: 150px;"/>
 
 ]
+
 ---
 
 # Where to go from here ...
@@ -936,6 +1029,31 @@ Tools and techniques for researchers who code...
 
 ---
 
+# Chatter
+
+.left-column50[
+
+<br>
+<br>
+
+One new thing you learned today?
+
+]
+
+.right-column30[
+
+<br>
+<br>
+
+<img src="img/slides/chat.svg"
+     alt=""
+     style="height: 150px;"/>
+
+]
+---
+
+---
+
 # Acknowledgements
 
 Reuse and inspiration was drawn from CodeRefinery and Skills4EOSC.
@@ -949,3 +1067,5 @@ CodeRefinery lessons:
 Logos are belong to the companies they represent
 
 Icons used are from UXWing
+
+CSC slide by Josefine Nordling from part 1 of this training. 
