@@ -391,6 +391,7 @@ class: center, middle
 
 .center[
 ## <https://github.com/>
+See also: <https://samumantha.github.io/github-jupyter-4-ds/creating-repo-using-web/>
 ]
 
 
@@ -417,7 +418,6 @@ History
 Annotate
 ]
 
-See also: <https://samumantha.github.io/github-jupyter-4-ds/creating-repo-using-web/>
 
 ---
 
@@ -472,9 +472,9 @@ See also: <https://samumantha.github.io/github-jupyter-4-ds/creating-repo-using-
 
 # GitHub fork
 
-.right-column80[
+
 github.com/**myusername**/myrepo 
-]
+
 .right-column60[
 ➡ github.com/**yourusername**/myrepo
 ]
@@ -532,7 +532,7 @@ Full workflow **local**:
 
 ---
 
-## Demo - exploring an existing repo
+# Demo - exploring an existing repo
 
 <br>
 <br>
@@ -543,6 +543,8 @@ Full workflow **local**:
 - Forks
 - Issues
 - Pull requests
+
+<br>
 
 ➡ <https://github.com/the-turing-way/the-turing-way/>
 
@@ -560,6 +562,8 @@ Full workflow **local**:
 - Pull request
 
 New file vs changing file
+
+<br>
 
 ➡ <https://github.com/samumantha/data_support_recipe_book>
 
@@ -801,11 +805,19 @@ style="height: 250px;"/>
 
 ---
 
+
 # Good practice
+
+<br>
+<br>
+
+.center[
 
 <img src="img/slides/run_all.png"
 alt=""
-style="width: 450px;"/>
+style="width: 780px;"/>
+
+]
 
 ---
 
@@ -813,13 +825,17 @@ style="width: 450px;"/>
 
 <br>
 <br>
-<br>
+
 
 - Prefilled
 - Exercises as rendered text
 - Automatic checks
 
+<br>
+
+
 ➡ <https://github.com/csc-training/python-introduction/blob/gh-pages/notebooks/examples/1%20-%20Introduction.ipynb>
+
 ➡ <https://github.com/csc-training/PythonGIS_CSC/blob/master/Raster/Seurasaari_trees.ipynb>
 
 ---
@@ -828,10 +844,12 @@ style="width: 450px;"/>
 
 <br>
 <br>
-<br>
+
 
 Tutorial / Walkthrough
 ➡ Let others explore
+
+<br>
 
 ➡ <https://documentation.dataspace.copernicus.eu/APIs/openEO/openeo-community-examples/python/ParcelDelineation/Parcel%20delineation.html>
 
@@ -852,7 +870,7 @@ style="height: 200px;"/>
 
 <br>
 
-GitHub, Websites: Share to view
+GitHub, Websites: **Share to view**
 
 ]
 
@@ -866,7 +884,7 @@ style="height: 200px;"/>
 
 <br>
 
-Google Colab, Noppe, Google Colab: Share to execute and change in the cloud
+Google Colab, Noppe, Google Colab: **Share to execute and change in the cloud**
 
 ]
 
@@ -880,7 +898,9 @@ Google Colab, Noppe, Google Colab: Share to execute and change in the cloud
 **Noppe**: CSC service free of charge for Finnish researchers
 
 ➡ Readymade notebooks
+
 ➡ Teaching
+
 ➡ Collaboration
 
 .quote[Brought to you by ministry of education and culture!]
@@ -892,7 +912,7 @@ Google Colab, Noppe, Google Colab: Share to execute and change in the cloud
 .center[
 <img src="img/slides/jupyter_reproducibility.png"
 alt=""
-style="height: 250px;"/>
+style="height: 350px;"/>
 
 
 .quote[Jupyter supports code modularity + documentation and is a good format to share usage example]
@@ -1008,6 +1028,16 @@ Learn more...
 
 ---
 
+class: center, middle
+
+<img src="img/slides/reproducibility.jpg"
+     alt="A person showing another person what steps to take to make their data research reproducible. There is a path with several steps- Here is my data - Here are my tools - Here is my code - Here are my results"
+     style="height: 500px;"/>
+
+.cite[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <https://zenodo.org/records/13882307>]
+
+---
+
 .center[
 <img src="img/slides/coderefinery.png"
 alt=""
@@ -1050,7 +1080,6 @@ One new thing you learned today?
      style="height: 150px;"/>
 
 ]
----
 
 ---
 
