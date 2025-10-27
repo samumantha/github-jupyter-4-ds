@@ -58,8 +58,6 @@ Jupyter Hub: Multi user self-hosting option (your institution might host their o
 
 Noppe (previously CSC Notebooks) offers web applications (RStudio and Jupyter) for self-learning, hosting courses and collaboration. The applications are accessed through a web browser and run in CSC cloud. 
 
-TODO: picture of Noppe
-
 ## Use cases for notebooks
 
 - Really good for step-by-step recipes (e.g. read data, filter data, do some statistics, plot the results)

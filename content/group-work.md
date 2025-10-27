@@ -30,7 +30,7 @@ Should I add everybody as collaborator?
 - GitHub: probably better integrations (with services like Zenodo), probably more visibility (more users).
 - GitLab: more features, you can also self-host, more advanced continuous integration.
 - Your own university's GitLab: most control, local support, but limited visibility and you might lose access when you move on.
-- [Nordic GitLab](XX): easier collaboration across organizations and national borders, visibility within Nordics.
+- [Nordic GitLab](https://coderefinery.org/repository/): easier collaboration across organizations and national borders, visibility within Nordics.
 
 ---
 

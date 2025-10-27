@@ -1,3 +1,5 @@
+# Jupyter Exercises
+
 ## Our first notebook
 
 ````{challenge} Exercise Jupyter-1: Create a notebook (15 min)
@@ -63,7 +65,7 @@
 ````
 
 
-# Plotting with [Vega-Altair](https://altair-viz.github.io/)
+## Plotting with [Vega-Altair](https://altair-viz.github.io/)
 
 :::{objectives}
 - Be able to create simple plots with Vega-Altair and tweak them
@@ -87,7 +89,7 @@ could use a local file name instead.
 
 Pandas dataframes are a great data structure for **tabular data**.
 
-# Reading data into a dataframe
+### Reading data into a dataframe
 
 We can try this together in a notebook:
 Using Pandas we can **merge, join, concatenate, and compare**
@@ -112,7 +114,7 @@ data_monthly = pd.concat([data_tromso, data_oslo], axis=0)
 data_monthly
 ```
 
-### Data preprocessing
+#### Data preprocessing
 
 There is a problem which we may not see yet: Dates
 are not in a standard date format (YYYY-MM-DD). We can fix this:
@@ -125,7 +127,7 @@ With Pandas it is possible to do a lot more (adjusting missing values, fixing
 inconsistencies, changing format).
 
 
-## What is in a dataframe?
+#### What is in a dataframe?
 
 The name pandas is derived from the term "**pan**el **da**ta".
 
@@ -168,7 +170,7 @@ data_monthly["max temperature"].max()
 data_monthly[data_monthly["max temperature"] > 20.0]
 ```
 
-## Why are we starting with [Vega-Altair](https://altair-viz.github.io/)?
+#### Why are we starting with [Vega-Altair](https://altair-viz.github.io/)?
 
 - Concise and powerful
 - "Simple, friendly and consistent API" allows us to focus on the data
@@ -183,7 +185,7 @@ data_monthly[data_monthly["max temperature"] > 20.0]
 
 
 
-## Reading data into a dataframe
+#### Reading data into a dataframe
 
 From the previous section, let's load the data in our jupyter notebook and fix the dates.
 
@@ -209,7 +211,7 @@ data_monthly
 
 
 
-## Plotting the data
+#### Plotting the data
 
 Now let's plot the data. We will start with a plot that is not optimal and
 then we will explore and improve a bit as we go:
@@ -333,7 +335,7 @@ Monthly temperature ranges for two cities in Norway.
 - [Gallery of examples](https://altair-viz.github.io/gallery/index.html)
 :::
 
-## Themes
+### Themes
 
 In [Vega-Altair](https://altair-viz.github.io/) you can change the theme and
 select from a long [list of themes](https://github.com/vega/vega-themes).  On
@@ -401,7 +403,7 @@ Try to rerun some examples from the [Gallery of examples](https://altair-viz.git
 
 Additional: 
 
-# Customizing plots
+### Customizing plots
 
 :::{objectives}
 - Know where to look to find out how to tweak plots
@@ -413,7 +415,7 @@ Additional:
 :::
 
 
-## Loading and plotting a dataset
+### Loading and plotting a dataset
 
 In this lesson will work with one of the
 [Gapminder](https://www.gapminder.org/tools/) datasets.
@@ -465,7 +467,7 @@ alt.Chart(data).mark_point().encode(x="gdpPercap", y="lifeExp")
 :::
 
 
-## Filtering data
+### Filtering data
 
 In [Vega-Altair](https://altair-viz.github.io) we can chain functions.  Let us
 add two more functions: The first will apply a filter, the second will make the
@@ -489,7 +491,7 @@ Now we only keep the year 2007.
 Alternatively, we could have filtered the data before plotting using pandas.
 
 
-## Using color as additional channel
+### Using color as additional channel
 
 A very neat feature of [Vega-Altair](https://altair-viz.github.io) is that it
 is easy to add and modify visual channels. Let us try to add one more so that
@@ -512,7 +514,7 @@ Using different colors for different continents.
 :::
 
 
-## Changing to log scale
+### Changing to log scale
 
 For this data set we will get a better insight when switching the x-axis from
 linear to log scale:
@@ -534,7 +536,7 @@ Changing the x axis to log scale.
 :::
 
 
-## Improving axis titles
+### Improving axis titles
 
 ```{code-block} python
 ---
@@ -554,7 +556,7 @@ Improving the axis titles.
 :::
 
 
-## Faceted charts
+### Faceted charts
 
 To see what faceted charts are and how easy it is to do this, add the following
 line:
@@ -573,7 +575,7 @@ alt.Chart(data).mark_point().encode(
 Guess what happens when you change `row="continent"` to `column="continent"`?
 
 
-## Changing from points to circles
+### Changing from points to circles
 
 Let us add one more visual channel, mapping size of the circle to the
 population size of a country:
@@ -596,7 +598,7 @@ Circle sizes are proportional to population sizes.
 :::
 
 
-## Title and axis values
+### Title and axis values
 
 In the next step we modify a number of things:
 - We go back to the version where all circles have the same size
@@ -635,7 +637,7 @@ The plot is starting to look better!
 :::
 
 
-## Colors
+### Colors
 
 In the next step we change the color scheme ([list of all
 schemes](https://vega.github.io/vega/docs/schemes/)), make the circles larger
@@ -722,7 +724,7 @@ How to Make Figures and Presentations That Are Friendly to Colorblind People."](
 :::
 
 
-## More tweaking towards a publication-ready figure
+### More tweaking towards a publication-ready figure
 
 Let us add a subtitle and adjust sizing and positioning:
 ```{code-block} python
@@ -782,7 +784,7 @@ chart.interactive()
 :::
 
 
-## Interactive charts
+### Interactive charts
 
 With not too many changes we can make the chart interactive and add a slider
 for the year (please try this in [this
@@ -844,7 +846,7 @@ chart.interactive()
 ```
 
 
-## Adding more annotation
+### Adding more annotation
 
 With few more lines we can add extra annotation that can help to highlight
 certain aspects of the plot and to tell a story:
@@ -926,7 +928,7 @@ chart.interactive()
 :::
 
 
-## Saving the chart as web page
+### Saving the chart as web page
 
 You can save the chart as a web site and try to open it in a separate browser
 tab and put it on your home page or research group website:

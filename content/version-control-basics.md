@@ -108,8 +108,8 @@ fastest, easiest way to do it.  Git and GitHub provide collaboration tools to al
 - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
 - **forking**: Taking a copy of a repository (which is typically not yours) - your
   copy (fork) stays on GitHub and you can make changes to your copy.
-- **Pull request**:  XX
-- **Issue**: XX
+- **Pull request**: An executed idea, e.g. code suggestion to integrate.
+- **Issue**: An idea, bug report or suggestion written in text.
 
 ```{figure} /img/basics/file-view.png
 ---

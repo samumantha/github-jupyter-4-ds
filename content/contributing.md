@@ -1,7 +1,4 @@
 # Contributing to existing repositories using pull requests
-
-TODO: Turn around: Non collaborator PR first then mention that one can also add collaborators. Maybe even put this as first exercise. Use stuff from this text:
-
 ### Exercise
 
 - We first open an issue via the web interface

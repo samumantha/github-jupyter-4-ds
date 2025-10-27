@@ -1,9 +1,8 @@
 # Enhancing Data Support: Practical Reproducibility
 
 
-> ## WIP
+> ## Note that some pages may be using older versions of the tools.
 >
-> This material is **work in progress**, except for this index page and the setup pages, please do not trust anything, yet. 
 {: .discussion}
 
 
@@ -19,7 +18,7 @@ We mainly want to provide a safe environment to experience these tools and give 
 
 ## Prerequisites
 
-This is a lesson targeted at beginners, no prior knowledge of GitHub or Jupyter is needed. 
+This is a lesson targeted at beginners, no prior knowledge of GitHub or Jupyter is needed.
 
 If you would like to get your hands in the dirt and play around with the tools of this webinar, please come prepared with:
 
@@ -47,11 +46,17 @@ widths: auto
 10 min , **break**
 20 min, {doc}`jupyter`
 25 min, {doc}`jupyter-exercise`
-10 min, {doc}`where-to-go`
+10 min, Outro and where to go
 ```
 
 
 ## Content
+
+During the course, we will use [slides](https://github.com/samumantha/github-jupyter-4-ds/blob/main/content/slides.pdf). 
+You may also read up on the topics through material provided here. 
+Mostly the materials goes into more detail than what we discuss during course. 
+Feel free to explore on your own time!
+
 
 ```{toctree}
 ---
@@ -62,7 +67,7 @@ hidden:
 
 github-account
 version-control-basics
-creating-using-web
+creating-repo-using-web
 contributing
 group-work
 ```
@@ -77,16 +82,6 @@ hidden:
 noppe
 jupyter
 jupyter-exercise
-```
-
-```{toctree}
----
-caption: Summary
-maxdepth: 1
-hidden:
----
-
-where-to-go
 ```
 
 ```{toctree}
