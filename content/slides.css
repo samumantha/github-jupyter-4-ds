@@ -29,13 +29,13 @@ body {
 }
 
 .gray-background {
-  background: #d6cbd6;
+  background: rgb(183, 202, 206);
 }
 
 .fat {
   font-family: 'Open Sans', cursive;
   font-size: 1.8em;
-  color: hsl(155, 95%, 16%);
+  color: #116879ff
 }
 
 ul {
@@ -45,26 +45,26 @@ ul {
 h1,
 h2,
 h3 {
-  color: #045802;
+  color: #116879ff;
 }
 
 a {
-  color: #3498db;
+  color: rgb(30, 183, 214);
 }
 
 .inverse {
-  background: #045802;
-  color: #ffffff;
+  background: rgb(208, 224, 190);
+  
 }
 
 .inverse h1,
 .inverse h2 {
-  color: #a3e4d7;
+  color: #830051ff;
   line-height: 0.8em;
 }
 
 .background h1 {
-  color: #daefdc;
+  color: rgb(174, 217, 226);
 }
 
 .left-column20 {
@@ -162,7 +162,7 @@ a {
 }
 
 .quote {
-  color: #61906b;
+  color: #116879ff;
   font-family: 'Kalam', cursive;
   font-size: 1.2em;
 }
