@@ -8,6 +8,8 @@ class: center, middle, gray-background
 
 Samantha Wittke
 
+samantha.wittke@csc.fi
+
 ### CSC - IT Center for Science
 
 <img src="img/slides/CCby.png"
@@ -19,66 +21,51 @@ Samantha Wittke
 # Outline
 
 .left-column50[
-Intro and practicalities
+Intro and practicalities (10min)
 
-GitHub
+GitHub (45min)
 
 - Version control
 - Creating a repository
 - Contributing to a repository
-- Version control wrap up
-]
 
-.right-column50[
+Break (10min)
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-Break 
-
-Jupyter 
+Jupyter (45min)
 
 - Computational notebooks
 - Basic features
 
-Where to go from here
+Where to go from here (10min)
 ]
 
+.right-column40[
+
+<br>
+<br>
+
+.quote[This session will only provide a **glimpse** into the world of GitHub and Jupyter.]
+
+]
+
+???
+
+Connect to part 1 by looking at practical perspective
+
+It is normal that it may be overwhelming. Take it as a starting point and come back when you want to try something new.
+
 ---
 
-# (Optional) Prerequisites for following along 
-
-<br>
-<br>
-
-- [GitHub account](https://samumantha.github.io/github-jupyter-4-ds/github-account/)
-
-<br>
-<br>
-
-- [Access to Noppe](https://samumantha.github.io/github-jupyter-4-ds/noppe/)
-
----
-
-class: center, middle
-
-<img src="img/slides/reproducibility.jpg"
-     alt="A person showing another person what steps to take to make their data research reproducible. There is a path with several steps- Here is my data - Here are my tools - Here is my code - Here are my results"
-     style="height: 500px;"/>
-
-.cite[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <https://zenodo.org/records/13882307>]
-
----
 
 # Questions
 
 .left-column50[
-Ask at any time
+Please ask at any time
 -> Zoom chat or raise hand
+
+.quote[Please be nice and patient with one another. Everyone is on different level and that is OK!]
+
+No breakoutrooms today.
 ]
 
 .right-column50[
@@ -97,11 +84,20 @@ Ask at any time
 
 ]
 
+???
+
+Might not have time for details, but can also answer later in wrap-up e-mail.
+
+
 ---
 
 # Chatter
 
 .left-column60[
+
+<br>
+<br>
+
 
 1. Type your response into the chat, but WAIT to hit enter
 2. Listen for the countdown (three, two, one, CHAT!)
@@ -117,6 +113,10 @@ Ask at any time
 
 ]
 
+???
+
+We will have 3-4 of them during this session. To stay awake. 
+
 ---
 
 # Chatter - Let's practice!
@@ -129,6 +129,10 @@ Ask at any time
 
 One word to describe your morning today?
 
+<br>
+
+.quote[Type your answer in chat, but wait to send]
+
 
 
 ]
@@ -140,6 +144,23 @@ One word to describe your morning today?
      style="height: 150px;"/>
 
 ]
+
+---
+
+# Prerequisites for following along 
+
+<br>
+
+- [GitHub account](https://samumantha.github.io/github-jupyter-4-ds/github-account/)
+
+<br>
+
+- [Access to Noppe](https://samumantha.github.io/github-jupyter-4-ds/noppe/)
+
+<br>
+
+.quote[You can also just watch and ask questions :) But do try it out by yourself later, it is the best way to learn! Recording will be made available.]
+
 
 ---
 
@@ -161,6 +182,9 @@ One word to describe your morning today?
 ]
 ]
 
+???
+
+You may not have use for these tools yourself, but good to know anyway to potentially forward researchers. 
 
 ---
 
@@ -173,6 +197,10 @@ class: middle, center
 
 .cite[Josefine Nordlings slide from part 1 of this training]
 
+???
+
+From Josefines slides in part 1. Record keeping enables reproducibility.
+
 ---
 
 class:middle
@@ -181,6 +209,7 @@ class:middle
      alt=""
      style="width: 750px;"/>
 
+.cite[Josefine Nordlings slide from part 1 of this training]
 
 ---
 
@@ -191,12 +220,20 @@ class: middle, center
      alt=""
      style="width: 750px;"/>
 
+???
+
+Good overview of reproducible research - from computational perspective. 
+
 
 ---
 
-class: middle, center
+class: middle, center, inverse
 
-.quote[Code that works and is shared is not the same as reproducible code]
+.quote[Code that works (for you) and is shared is not the same as reproducible code!]
+
+???
+
+Previous slide showed this. We look at two tools today that support reproducibility and FAIR research software. 
 
 ---
 
@@ -255,8 +292,6 @@ class: middle, center
 
 Tool/format for version control 
 
-
-
 Others: Subversion, Mercurial, ...
 ]
 
@@ -284,9 +319,10 @@ Git: Command line or inbuilt (VSCode etc)
 
 ---
 
+class: inverse
+
 # Did you know?
 
-<br>
 <br>
 
 **In-house GitLab**: Host your own repositories safely within the walls of your organisation.
@@ -310,11 +346,113 @@ Why do we teach GitHub? ➡ Most used, beyond borders
 
 .quote[A repository is the most basic element of GitHub. It's a place where you can **store your code**, your files, and each file's **revision history**. Repositories can be **owned by persons or organisations**, have **multiple collaborators** and can be either **public or private**]
 
+.cite[Adapted from <https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories>]
 
+???
+
+Store everything, with history of changes
+Ownership
+Collborators
+Open/closed
 
 ---
 
-# Clone - download
+# Commit - a snapshot
+
+.left-column50[
+.center[
+<img src="img/slides/camera.svg"
+     alt="camera icon"
+     style="height: 100px;"/>
+]
+<br>
+
+.quote[Snapshot of current state of your repository
+... like taking a picture with metadata]
+]
+
+
+.right-column40[
+
+<br>
+<br>
+<br>
+
+- Who?
+- What?
+- Why? -> Commit message!
+- When?
+
+]
+
+???
+
+Commit messages make the history
+
+---
+
+# My own GitHub repository
+
+<br>
+
+## ... continue work on GitHub
+
+1. Work on it, make updates on GitHub, ...
+2. Commit when done (per file): take snapshots of units of work (one)
+
+---
+
+
+# Quick demo (please just watch):
+
+<br>
+<br>
+
+.center[
+
+All materials for this session are on GitHub too!
+
+<https://github.com/samumantha/github-jupyter-4-ds>
+
+.quote[Finding a typo in my own repository...]
+
+]
+
+???
+
+Typo is in the README!
+
+---
+
+
+# Detour: Markdown
+
+.quote[Machine and human readable plain text format. Useful for both GitHub and Jupyter.]
+
+```markdown
+
+# This is a section in Markdown
+
+## This is a subsection          
+                               
+Nothing special needed for       
+a normal paragraph.
+
+**Bold** and *emphasized*.
+
+A list:                           
+- this is an item                 
+- another item                    
+
+![](img/slides/CSC.png)
+
+[This is a link to CSC](https://research.csc.fi/)  
+
+```
+
+---
+
+# (Optional) Clone - download
 
 <br>
 
@@ -329,37 +467,13 @@ Why do we teach GitHub? ➡ Most used, beyond borders
 .quote[...get the latest (working) version on your computer]
 ]
 
----
+???
 
-# Commit - a snapshot
-
-.left-column50[
-.center[
-<img src="img/slides/camera.svg"
-     alt="camera icon"
-     style="height: 100px;"/>
-]
-
-.quote[Snapshot of current state of your repository
-... like taking a picture with metadata]
-]
-
-
-.right-column40[
-
-<br>
-<br>
-
-- Who?
-- What?
-- Why? -> Commit message!
-- When?
-
-]
+Not only the files but also the history.
 
 ---
 
-# My own GitHub repository
+# (Optional) My own GitHub repository
 
 ## ... continue work locally
 
@@ -370,13 +484,8 @@ Why do we teach GitHub? ➡ Most used, beyond borders
 
 .quote[Pull: Get latest version from GitHub]
 
-## ... continue work on GitHub
-
-1. Work on it, make updates, ...
-2. Commit: take snapshots of units of work (one)
-
-
 ---
+
 
 class: center, middle
 
@@ -384,14 +493,17 @@ class: center, middle
      alt=""
      style="height: 450px;"/>
 
+.cite[from <https://raw.githubusercontent.com/hendrixroa/in-case-of-fire-1/master/in_case_of_fire.png>]
 
 ---
 
-# Demo: Starting new
+# Demo: Starting new 
+
+Just watch for now. 
 
 .center[
-## <https://github.com/>
-See also: <https://samumantha.github.io/github-jupyter-4-ds/creating-repo-using-web/>
+### <https://github.com/>
+.cite[See also: <https://samumantha.github.io/github-jupyter-4-ds/creating-repo-using-web/>]
 ]
 
 
@@ -410,6 +522,7 @@ Create a new repository
 Add new file
 
 - Edit
+- (Special: license/citation.cff)
 - Commit
 - `main`
 
@@ -418,9 +531,13 @@ History
 Annotate
 ]
 
+???
+
+New file: type license or citation.cff into filename and check options
+Annotate: File -> Preview - Code - Blame
+
 
 ---
-
 
 ## Branches and merge
 
@@ -483,8 +600,7 @@ github.com/**myusername**/myrepo
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 - Propose changes
 - Use someone elses work as starting point
@@ -512,9 +628,13 @@ Full workflow **GitHub**:
 
 ➡ You made it to history!
 
+???
+
+This is the workflow for any repo you find on GitHub
+
 ---
 
-# Making a suggestion 
+# (Optional) Making a suggestion 
 
 <br>
 
@@ -532,9 +652,10 @@ Full workflow **local**:
 
 ---
 
-# Demo - exploring an existing repo
+# (Optional) Demo - exploring an existing repo 
 
-<br>
+Just watch :)
+
 <br>
 <br>
 
@@ -552,10 +673,11 @@ Full workflow **local**:
 
 # Demo - contribute
 
-<br>
-<br>
+You may suggest your own recipes!
+
 <br>
 
+- History
 - Issue
 - Fork / Branch
 - Work
@@ -566,6 +688,14 @@ New file vs changing file
 <br>
 
 ➡ <https://github.com/samumantha/data_support_recipe_book>
+
+???
+
+Commit history: 
+- Who?
+- What?
+- Why? -> Commit message!
+- When?
 
 ---
 
@@ -585,7 +715,7 @@ style="height: 150px;"/>
 - Manuscripts 
 - Configuration files
 - Website sources
-- Data*
+- Data (better options available!)
 ]
 
 .right-column50[
@@ -610,21 +740,22 @@ style="height: 150px;"/>
 
 ---
 
-# GitHub and reproducibility
+## Is sharing your work on GitHub making it reproducible?
 
 .center[
 <img src="img/slides/version_control_reproducibility.png"
 alt=""
-style="height: 250px;"/>
+style="height: 350px;"/>
 ]
 
 
-.quote[Is sharing your work on GitHub making it FAIR?]
+➡ Only in combination with other steps! **Computing environment**: Conda, Pip, Poetry, ...; **Persistent identifier**: Zenodo, ...
 
-➡ Support yes, but **GitHub link is not persistent**!
-➡ Zenodo, ...
+.footnote[Barker, M., Chue Hong, N.P., Katz, D.S. et al. Introducing the FAIR Principles for research software. Sci Data 9, 622 (2022). https://doi.org/10.1038/s41597-022-01710-x]'
 
-.footnote[Barker, M., Chue Hong, N.P., Katz, D.S. et al. Introducing the FAIR Principles for research software. Sci Data 9, 622 (2022). https://doi.org/10.1038/s41597-022-01710-x]
+???
+
+You share your work, that is one of the steps!
 
 ---
 
@@ -645,16 +776,13 @@ style="height: 250px;"/>
 
 ---
 
+class: center, middle
+
 # Summary - GitHub
 
-<br>
-<br>
-<br>
-<br>
 
-.center[
-.quote[Collaborate and share with others and yourself]
-]
+.quote[Track versions and collaborate and share with others and yourself]
+
 
 ---
 
@@ -665,17 +793,30 @@ class: inverse, center, middle
 
 Repository
 
-Issue
-
-Pull request
-
-Clone
-
 Commit
 
 Fork
 
 Branch
+
+Issue
+
+Pull request
+
+???
+
+repository: the project, including data, history, branches etc. 
+
+commit: a snapshot of the repository at a certain time
+
+fork: your own copy, but still on GitHub
+
+branch: a parallel universe, testing, developing, separation from "working version"
+
+issue: a way to report a bug, suggest a change, ask for a change, discuss an idea
+
+pull request: suggesting a change to be incorporated
+
 
 ---
 
@@ -686,7 +827,11 @@ Branch
 <br>
 <br>
 
-Do you see any usecases for your work and GitHub in the future?
+What usecases for GitHub can you see in your work?
+
+<br>
+
+.quote[Type your answer in chat, but wait to send]
 
 ]
 
@@ -733,8 +878,6 @@ style="height: 350px;"/>
 
 ---
 
-class: inverse
-
 # Researcher perspective
 
 <br>
@@ -751,6 +894,10 @@ Share to test and adapt
 
 .center[.quote[executable for others]]
 
+???
+
+Jupyter useful in beginning and end of the research process!
+
 ---
 
 # Coding in the terminal
@@ -763,9 +910,13 @@ alt=""
 style="height: 250px;"/>
 ]
 
+???
+
+Some people learn coding this way. Functionality check. Temporary. 
+
 ---
 
-# Script: summary
+# Script: A step by step recipe
 
 <br>
 
@@ -776,9 +927,13 @@ alt=""
 style="height: 250px;"/>
 ]
 
+???
+
+Mostly: Steps summarized in one file which can be run and rerun with one command or click. 
+
 ---
 
-# Notebooks: interactive
+# Notebooks: Interactive exploration
 
 <br>
 
@@ -790,25 +945,39 @@ style="height: 250px;"/>
 
 ]
 
+???
+
+Some people learn coding this way. Interactive and summarized. 
+
 ---
 
 # Demo usecase: Protopyping / Exploration
 
+You may follow along: <https://noppe.csc.fi/>
+
 <br>
-<br>
-<br>
+
 
 - Create notebook - naming
 - Create cells - code / markdown
+- Open an existing notebook (`first_plot.ipynb`)
 - Execute cells
 - Restart and run all
+
+???
+
+print("Hello world!")
+
+first_plot.ipynb
+
 
 ---
 
 
 # Good practice
 
-<br>
+.quote[Kernel > Restart kernel and run all cells]
+
 <br>
 
 .center[
@@ -821,7 +990,7 @@ style="width: 780px;"/>
 
 ---
 
-# Demo usecase: Teaching
+# Usecase: Teaching
 
 <br>
 <br>
@@ -829,18 +998,18 @@ style="width: 780px;"/>
 
 - Prefilled
 - Exercises as rendered text
-- Automatic checks
+- Automatic checks possible
 
 <br>
 
 
-➡ <https://github.com/csc-training/python-introduction/blob/gh-pages/notebooks/examples/1%20-%20Introduction.ipynb>
+➡ <https://github.com/csc-training/python-introduction/blob/gh-pages/notebooks/examples/1%20-%20Introduction.ipynb>  ➡ Also available in our Noppe workspace (introduction_to_python_csc.ipynb).
 
-➡ <https://github.com/csc-training/PythonGIS_CSC/blob/master/Raster/Seurasaari_trees.ipynb>
+➡ <https://github.com/csc-training/PythonGIS_CSC/blob/master/Raster/Seurasaari_trees.ipynb> ➡ Available in Noppe application "Introduction to geospatial Python".
 
 ---
 
-# Demo usecase: Sharing
+# Usecase: Sharing
 
 <br>
 <br>
@@ -854,6 +1023,10 @@ Tutorial / Walkthrough
 ➡ <https://documentation.dataspace.copernicus.eu/APIs/openEO/openeo-community-examples/python/ParcelDelineation/Parcel%20delineation.html>
 
 ➡ <https://github.com/eu-cdse/notebook-samples/blob/main/geo/stac_ndvi.ipynb>
+
+???
+
+Show how some tool is used, data is handled, etc. Step by step with images, text and code. 
 
 ---
 
@@ -884,26 +1057,29 @@ style="height: 200px;"/>
 
 <br>
 
-Google Colab, Noppe, Google Colab: **Share to execute and change in the cloud**
+Binder, Noppe, Google Colab: **Share to execute and change in the cloud**
 
 ]
 
 ---
 
+class: inverse
+
 # Did you know?
 
 <br>
-<br>
 
-**Noppe**: CSC service free of charge for Finnish researchers
+**Noppe**: CSC service for running **Jupyter or RStudio** in the cloud, free of charge for researchers in Finland
 
-➡ Readymade notebooks
+➡ **Readymade applications** (e.g. introduction to Python)
 
-➡ Teaching
+➡ **Teaching** in custom environment, same for all students
 
-➡ Collaboration
+➡ **Collaboration**
 
 .quote[Brought to you by ministry of education and culture!]
+
+Support available via `servicedesk@csc.fi` or in our [weekly user support sessions](https://csc.fi/en/training-calendar/csc-research-support-coffee-every-wednesday-at-1400-finnish-time-2-2/).
 
 ---
 
@@ -915,7 +1091,7 @@ alt=""
 style="height: 350px;"/>
 
 
-.quote[Jupyter supports code modularity + documentation and is a good format to share usage example]
+.quote[Supports code modularity + documentation and is a good format to share. Needs also info on computing environment.]
 ]
 
 ---
@@ -932,14 +1108,14 @@ style="height: 350px;"/>
 
 ---
 
-# Jupyter diff
+# Tracking changes in ipynb files
 
 .center[
 <img src="img/slides/jupyter_diff.png"
 alt=""
 style="height: 350px;"/>
 
-.quote[Version control possible, but limited benefits]
+.quote[Version control possible, but limited benefits. Solutions exist, e.g. `nbdime`]
 ]
 
 ---
@@ -976,7 +1152,7 @@ You may want to switch to scripts when ...
 ---
 
 
-class: middle, center
+class: middle, center, inverse
 
 # Summary
 
@@ -991,7 +1167,11 @@ class: middle, center
 <br>
 <br>
 
-How might understanding Jupyter support your work in the future?
+How might Jupyter benefit your work in the future?
+
+<br>
+
+.quote[Type your answer in chat, but wait to send]
 
 ]
 
@@ -1008,9 +1188,18 @@ How might understanding Jupyter support your work in the future?
 
 ---
 
-# Where to go from here ...
+class: center, middle
 
-<br>
+<img src="img/slides/reproducibility.jpg"
+     alt="A person showing another person what steps to take to make their data research reproducible. There is a path with several steps- Here is my data - Here are my tools - Here is my code - Here are my results"
+     style="height: 500px;"/>
+
+.cite[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <https://zenodo.org/records/13882307>]
+
+
+---
+
+# Where to go from here ...
 
 Play around with **GitHub**
 
@@ -1022,19 +1211,14 @@ Play around with **Jupyter**
 
 - Noppe workspace available for a while
 - Check out other Noppe applications
-- Install on your own computer
+- Install on your own computer (advanced!)
 
 Learn more...
 
----
+???
 
-class: center, middle
-
-<img src="img/slides/reproducibility.jpg"
-     alt="A person showing another person what steps to take to make their data research reproducible. There is a path with several steps- Here is my data - Here are my tools - Here is my code - Here are my results"
-     style="height: 500px;"/>
-
-.cite[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <https://zenodo.org/records/13882307>]
+Missing from here: Important part of reproducibility is to share info on computing environment
+Also documentation, licensing and workflows. 
 
 ---
 
@@ -1057,6 +1241,10 @@ Tools and techniques for researchers who code...
 - Next workshop in March '26: Sign up for [newsletter](https://coderefinery.org/about/newsletter/)
 - **Bring your own classroom**, contact `support@coderefinery.org`
 
+???
+
+We are actively looking into making CodeRefinery also suitable for data stewards. Wanna help? Contact me!
+
 ---
 
 # Chatter
@@ -1066,7 +1254,11 @@ Tools and techniques for researchers who code...
 <br>
 <br>
 
-One new thing you learned today?
+The most exciting thing you learned today?
+
+<br>
+
+.quote[Type your answer in chat, but wait to send]
 
 ]
 
@@ -1082,6 +1274,8 @@ One new thing you learned today?
 ]
 
 ---
+
+class: gray-background
 
 # Acknowledgements
 
