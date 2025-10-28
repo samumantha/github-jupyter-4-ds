@@ -31,31 +31,35 @@ If you would like to get your hands in the dirt and play around with the tools o
 - Utilize the basic features of GitHub and Jupyter.
 - Know where those tools can be run and found.
 
-
-## Agenda for the workshop
-
-```{csv-table}
----
-widths: auto
----
-10 min , Intro and practicalities
-20 min , {doc}`version-control-basics`
-15 min , {doc}`creating-using-web`
-5 min , {doc}`contributing`
-5 min , {doc}`group-work`
-10 min , **break**
-20 min, {doc}`jupyter`
-25 min, {doc}`jupyter-exercise`
-10 min, Outro and where to go
-```
-
-
 ## Content
 
 During the course, we will use [slides](https://github.com/samumantha/github-jupyter-4-ds/blob/main/content/slides.pdf). 
 You may also read up on the topics through material provided here. 
 Mostly the materials goes into more detail than what we discuss during course. 
 Feel free to explore on your own time!
+
+
+## Agenda for the workshop
+
+Intro and practicalities (10min)
+
+GitHub (45min)
+
+- Version control
+- Creating a repository
+- Contributing to a repository
+
+Break (10min)
+
+Jupyter (45min)
+
+- Computational notebooks
+- Basic features
+
+Where to go from here (10min)
+
+
+
 
 
 ```{toctree}
