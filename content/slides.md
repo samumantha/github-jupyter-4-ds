@@ -876,6 +876,10 @@ style="height: 350px;"/>
 
 ...
 
+???
+
+RStudio!
+
 ---
 
 # Researcher perspective
@@ -1219,6 +1223,8 @@ Learn more...
 
 Missing from here: Important part of reproducibility is to share info on computing environment
 Also documentation, licensing and workflows. 
+
+Pyramid!
 
 ---
 
