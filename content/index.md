@@ -33,7 +33,7 @@ If you would like to get your hands in the dirt and play around with the tools o
 
 ## Content
 
-During the course, we will use [slides](https://github.com/samumantha/github-jupyter-4-ds/blob/main/content/slides.pdf). 
+During the course, we will use [slides](https://a3s.fi/slides/25-github-jupyter-4ds-slides.pdf). 
 You may also read up on the topics through material provided here. 
 Mostly the materials goes into more detail than what we discuss during course. 
 Feel free to explore on your own time!
