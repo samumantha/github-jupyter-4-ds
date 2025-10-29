@@ -1,6 +1,6 @@
 class: center, middle, gray-background
 
-<img src="img/slides/CSC.png"
+<img src="./img/slides/CSC.png"
      alt="CSC logo"
      style="height: 250px;"/>
 
