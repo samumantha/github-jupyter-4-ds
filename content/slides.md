@@ -52,7 +52,14 @@ Where to go from here (10min)
 
 Connect to part 1 by looking at practical perspective
 
+Learning objectives: 
+
+    Understand the basic principles of version control and interactive computing platforms to support computational reproducibility.
+    Utilize the basic features of Git(-Hub) and Jupyter notebooks.
+    Know where those tools can be run and found.
+
 It is normal that it may be overwhelming. Take it as a starting point and come back when you want to try something new.
+
 
 ---
 
