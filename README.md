@@ -6,4 +6,4 @@ Long format materials adapted from: https://github.com/coderefinery/programming4
 
 Slides for the session itself: `content/slides.pdf`.
 
-A typo to fix for demo: This is a tyhpo. 
+A typo to fix for demo: This is a typo. 
