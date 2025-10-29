@@ -1,0 +1,880 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhancing Data Support: Practical Reproducibility &mdash; Enhancing Data Support: Practical Reproducibility  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Enhancing Data Support: Practical Reproducibility
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Version Control with GitHub</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github-account/">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-basics/">Basics and motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing to existing repositories using pull requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group-work/">How to organize a group’s work</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Jupyter notebooks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../noppe/">Getting access to CSC Noppe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter/">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter-exercise/">Our first notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter-exercise/#plotting-with-vega-altair">Plotting with Vega-Altair</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter-exercise/#reading-data-into-a-dataframe">Reading data into a dataframe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter-exercise/#customizing-plots">Customizing plots</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Optional lessons</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../doi-for-repo/">Making your project citable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../websites/">Hosting websites/homepages on GitHub Pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sharing-notebooks/">Sharing plots and notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installing-python/">Software install instructions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Enhancing Data Support: Practical Reproducibility</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Enhancing Data Support: Practical Reproducibility</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/samumantha/github-jupyter-4-ds/blob/main/content/slides.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>class: center, middle, gray-background</p>
+<figure class="align-default">
+<img alt="../_images/CSC.png" src="../_images/CSC.png" />
+</figure>
+<section id="enhancing-data-support-practical-reproducibility">
+<h1>Enhancing Data Support: Practical Reproducibility<a class="headerlink" href="#enhancing-data-support-practical-reproducibility" title="Link to this heading"></a></h1>
+<p>Samantha Wittke</p>
+<section id="csc-it-center-for-science">
+<h2>CSC - IT Center for Science<a class="headerlink" href="#csc-it-center-for-science" title="Link to this heading"></a></h2>
+<figure class="align-default">
+<img alt="../_images/CCby.png" src="../_images/CCby.png" />
+</figure>
+</section>
+</section>
+<hr class="docutils" />
+<section id="outline">
+<h1>Outline<a class="headerlink" href="#outline" title="Link to this heading"></a></h1>
+<p>.left-column50[
+Intro and practicalities</p>
+<p>GitHub</p>
+<ul class="simple">
+<li><p>Version control</p></li>
+<li><p>Creating a repository</p></li>
+<li><p>Contributing to a repository</p></li>
+<li><p>Version control wrap up
+]</p></li>
+</ul>
+<p>.right-column50[</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>Break</p>
+<p>Jupyter</p>
+<ul class="simple">
+<li><p>Computational notebooks</p></li>
+<li><p>Basic features</p></li>
+</ul>
+<p>Where to go from here
+]</p>
+<hr class="docutils" />
+<p>class: center, middle</p>
+<figure class="align-default">
+<img alt="../_images/reproducibility.jpg" src="../_images/reproducibility.jpg" />
+</figure>
+<p>.cite[The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: <a class="reference external" href="https://zenodo.org/records/13882307">https://zenodo.org/records/13882307</a>]</p>
+</section>
+<hr class="docutils" />
+<section id="questions">
+<h1>Questions<a class="headerlink" href="#questions" title="Link to this heading"></a></h1>
+<p>.left-column50[
+Ask at any time
+-&gt; Zoom chat or raise hand
+]</p>
+<p>.right-column50[</p>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/question.svg" src="../_images/question.svg" />
+</figure>
+<figure class="align-default">
+<img alt="../_images/handsup.svg" src="../_images/handsup.svg" />
+</figure>
+<p>]</p>
+<p>]</p>
+</section>
+<hr class="docutils" />
+<section id="chatter">
+<h1>Chatter<a class="headerlink" href="#chatter" title="Link to this heading"></a></h1>
+<p>.left-column60[</p>
+<ol class="arabic simple">
+<li><p>Type your response into the chat, but WAIT to hit enter</p></li>
+<li><p>Listen for the countdown (three, two, one, CHAT!)</p></li>
+<li><p>Hit enter and watch the responses!</p></li>
+</ol>
+<p>]</p>
+<p>.right-column30[</p>
+<figure class="align-default">
+<img alt="../_images/chat.svg" src="../_images/chat.svg" />
+</figure>
+<p>]</p>
+</section>
+<hr class="docutils" />
+<section id="today-two-perspectives">
+<h1>Today: Two perspectives<a class="headerlink" href="#today-two-perspectives" title="Link to this heading"></a></h1>
+<br>
+<br>
+<br>
+<p>.left-column50[
+.center[</p>
+<section id="researcher-who-codes">
+<h2>Researcher who codes<a class="headerlink" href="#researcher-who-codes" title="Link to this heading"></a></h2>
+<p>]
+]</p>
+<p>.right-column50[
+.center[</p>
+</section>
+<section id="research-support">
+<h2>Research support<a class="headerlink" href="#research-support" title="Link to this heading"></a></h2>
+<p>]
+]</p>
+<hr class="docutils" />
+<p>class: middle, center</p>
+<figure class="align-default">
+<img alt="../_images/practice.png" src="../_images/practice.png" />
+</figure>
+<hr class="docutils" />
+<p>class:middle</p>
+<figure class="align-default">
+<img alt="../_images/practice_hl.png" src="../_images/practice_hl.png" />
+</figure>
+<hr class="docutils" />
+<p>class: middle, center</p>
+<figure class="align-default">
+<img alt="../_images/practice.png" src="../_images/practice.png" />
+</figure>
+<hr class="docutils" />
+<p>class: middle, center</p>
+<p>.quote[Code that works and is shared is not the same as reproducible code]</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="version-control">
+<h1>Version control<a class="headerlink" href="#version-control" title="Link to this heading"></a></h1>
+<br>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/camera.svg" src="../_images/camera.svg" />
+</figure>
+<p>]</p>
+<br>
+<br>
+<ul class="simple">
+<li><p>Version control is the practice of <strong>tracking and managing changes over time</strong>.</p></li>
+<li><p>You can think of version control like regularly taking a photo (“snapshot”) of your work.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="github">
+<h1>GitHub<a class="headerlink" href="#github" title="Link to this heading"></a></h1>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/github.svg" src="../_images/github.svg" />
+</figure>
+<p>]</p>
+<br>
+<p>-&gt; one place to <strong>find the source</strong> of software, webpages, presentations, books, games, …</p>
+<br>
+<p>… and a <strong>place to collaborate</strong> and share</p>
+<hr class="docutils" />
+<p>.left-column50[</p>
+</section>
+<section id="git">
+<h1>Git<a class="headerlink" href="#git" title="Link to this heading"></a></h1>
+<br>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/git.svg" src="../_images/git.svg" />
+</figure>
+<p>]</p>
+<br>
+<p>Tool/format for version control</p>
+<p>Others: Subversion, Mercurial, …
+]</p>
+<p>.right-column50[</p>
+</section>
+<section id="id1">
+<h1>GitHub<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<br>
+<br>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/github.svg" src="../_images/github.svg" />
+</figure>
+<p>]
+<br>
+Hosting service for Git repositories with web interface -&gt; Share and collaborate</p>
+<p>Others: GitLab, Codeberg, …
+]</p>
+<p>???</p>
+<p>Git: Command line or inbuilt (VSCode etc)</p>
+</section>
+<hr class="docutils" />
+<section id="repositories-a-place-to-store">
+<h1>Repositories - a place to store<a class="headerlink" href="#repositories-a-place-to-store" title="Link to this heading"></a></h1>
+<br>
+<br>
+<p>.quote[A repository is the most basic element of GitHub. It’s a place where you can <strong>store your code</strong>, your files, and each file’s <strong>revision history</strong>. Repositories can be <strong>owned by persons or organisations</strong>, have <strong>multiple collaborators</strong> and can be either <strong>public or private</strong>]</p>
+</section>
+<hr class="docutils" />
+<section id="clone-download">
+<h1>Clone - download<a class="headerlink" href="#clone-download" title="Link to this heading"></a></h1>
+<br>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/github.svg" src="../_images/github.svg" />
+</figure>
+<br>
+<p>.quote[…get the latest (working) version on your computer]
+]</p>
+</section>
+<hr class="docutils" />
+<section id="commit-a-snapshot">
+<h1>Commit - a snapshot<a class="headerlink" href="#commit-a-snapshot" title="Link to this heading"></a></h1>
+<p>.left-column50[
+.center[</p>
+<figure class="align-default">
+<img alt="../_images/camera.svg" src="../_images/camera.svg" />
+</figure>
+<p>]</p>
+<p>.quote[Snapshot of current state of your repository
+… like taking a picture with metadata]
+]</p>
+<p>.right-column40[</p>
+<br>
+<br>
+<ul class="simple">
+<li><p>Who?</p></li>
+<li><p>What?</p></li>
+<li><p>Why? -&gt; Commit message!</p></li>
+<li><p>When?</p></li>
+</ul>
+<p>]</p>
+</section>
+<hr class="docutils" />
+<section id="my-own-github-repository">
+<h1>My own GitHub repository<a class="headerlink" href="#my-own-github-repository" title="Link to this heading"></a></h1>
+<section id="continue-work-locally">
+<h2>… continue work locally<a class="headerlink" href="#continue-work-locally" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Clone: get a copy to my computer</p></li>
+<li><p>Work on it, make updates, …</p></li>
+<li><p>Commit: take snapshots of units of work (one or many)</p></li>
+<li><p>Push: submit snapshots to GitHub</p></li>
+</ol>
+<p>.quote[Pull: Get latest version from GitHub]</p>
+</section>
+<section id="continue-work-on-github">
+<h2>… continue work on GitHub<a class="headerlink" href="#continue-work-on-github" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Work on it, make updates, …</p></li>
+<li><p>Commit: take snapshots of units of work (one)</p></li>
+</ol>
+<hr class="docutils" />
+<p>class: center, middle</p>
+<figure class="align-default">
+<img alt="https://raw.githubusercontent.com/hendrixroa/in-case-of-fire-1/master/in_case_of_fire.png" src="https://raw.githubusercontent.com/hendrixroa/in-case-of-fire-1/master/in_case_of_fire.png" />
+</figure>
+</section>
+</section>
+<hr class="docutils" />
+<section id="demo-starting-new">
+<h1>Demo: Starting new<a class="headerlink" href="#demo-starting-new" title="Link to this heading"></a></h1>
+<p>.center[</p>
+<section id="https-github-com">
+<h2><a class="reference external" href="https://github.com/">https://github.com/</a><a class="headerlink" href="#https-github-com" title="Link to this heading"></a></h2>
+<p>]</p>
+<p>.left-column50[
+Create a new repository</p>
+<ul class="simple">
+<li><p>Namespace</p></li>
+<li><p>Name</p></li>
+<li><p>Description</p></li>
+<li><p>README</p></li>
+<li><p>LICENSE</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>
+]</p></li>
+</ul>
+<p>.right-column50[
+Add new file</p>
+<ul class="simple">
+<li><p>Edit</p></li>
+<li><p>Commit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">main</span></code></p></li>
+</ul>
+<p>History</p>
+<p>Annotate
+]</p>
+</section>
+<hr class="docutils" />
+<section id="branches-and-merge">
+<h2>Branches and merge<a class="headerlink" href="#branches-and-merge" title="Link to this heading"></a></h2>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/gophers.svg" src="../_images/gophers.svg" />
+</figure>
+<p>]</p>
+<p>.cite[Image created using <a class="reference external" href="https://gopherize.me/">https://gopherize.me/</a>
+(<a class="reference external" href="https://twitter.com/jay_gee/status/703360688618536960">inspiration</a>)]</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="github-pull-request">
+<h1>GitHub pull request<a class="headerlink" href="#github-pull-request" title="Link to this heading"></a></h1>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/suggestion.svg" src="../_images/suggestion.svg" />
+</figure>
+<br>
+<p>.quote[Making a contribution: A request to merge]</p>
+<p>]</p>
+</section>
+<hr class="docutils" />
+<section id="github-issues">
+<h1>GitHub issues<a class="headerlink" href="#github-issues" title="Link to this heading"></a></h1>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/issues.svg" src="../_images/issues.svg" />
+</figure>
+<br>
+<p>.quote[Inform, ask and collaborate]</p>
+<p>]</p>
+</section>
+<hr class="docutils" />
+<section id="github-fork">
+<h1>GitHub fork<a class="headerlink" href="#github-fork" title="Link to this heading"></a></h1>
+<p>.right-column80[
+github.com/<strong>myusername</strong>/myrepo
+]
+.right-column60[
+➡ github.com/<strong>yourusername</strong>/myrepo
+]</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<ul class="simple">
+<li><p>Propose changes</p></li>
+<li><p>Use someone elses work as starting point</p></li>
+</ul>
+<br>
+<p>.center[
+.quote[Useful when you cannot edit directly]
+]</p>
+</section>
+<hr class="docutils" />
+<section id="making-a-suggestion">
+<h1>Making a suggestion<a class="headerlink" href="#making-a-suggestion" title="Link to this heading"></a></h1>
+<br>
+<p>Full workflow <strong>GitHub</strong>:</p>
+<ol class="arabic simple">
+<li><p>Suggest idea: issue</p></li>
+<li><p>Discussion -&gt; OK</p></li>
+<li><p>Separate your work: branch / fork</p></li>
+<li><p>Work: work - commit (one or more)</p></li>
+<li><p>Suggest work: pull request</p></li>
+<li><p>Accept: merge</p></li>
+</ol>
+<p>➡ You made it to history!</p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h1>Making a suggestion<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
+<br>
+<p>Full workflow <strong>local</strong>:</p>
+<ol class="arabic simple">
+<li><p>Suggest idea: issue</p></li>
+<li><p>Discussion -&gt; OK</p></li>
+<li><p>Get the work: (fork) - clone - pull</p></li>
+<li><p>Work: work - add - commit (one or more)</p></li>
+<li><p>Put it on GitHub: push</p></li>
+<li><p>Suggest work: pull request</p></li>
+<li><p>Accept: merge</p></li>
+</ol>
+<p>➡ You made it to history!</p>
+</section>
+<hr class="docutils" />
+<section id="what-to-track-using-git-hub">
+<h1>What to track using Git(Hub)?<a class="headerlink" href="#what-to-track-using-git-hub" title="Link to this heading"></a></h1>
+<p>.left-column50[</p>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/check.svg" src="../_images/check.svg" />
+</figure>
+<p>]</p>
+<ul class="simple">
+<li><p>Software</p></li>
+<li><p>Scripts</p></li>
+<li><p>Documents</p></li>
+<li><p>Manuscripts</p></li>
+<li><p>Configuration files</p></li>
+<li><p>Website sources</p></li>
+<li><p>Data*
+]</p></li>
+</ul>
+<p>.right-column50[</p>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/cross.svg" src="../_images/cross.svg" />
+</figure>
+<p>]</p>
+<ul class="simple">
+<li><p>Secrets</p></li>
+<li><p>Passwords</p></li>
+<li><p>Binaries; files that are difficult to diff</p></li>
+<li><p>Files generated from builds
+]</p></li>
+</ul>
+<p>???</p>
+<ul class="simple">
+<li><p>Software (this is how it started but Git/GitHub can track a lot more)</p></li>
+<li><p>Documents (plain text files much better suitable than Word documents)</p></li>
+<li><p>Manuscripts (Git is great for collaborating/sharing LaTeX or Quarto manuscripts)</p></li>
+</ul>
+<hr class="docutils" />
+<section id="demo-exploring-an-existing-repo">
+<h2>Demo - exploring an existing repo<a class="headerlink" href="#demo-exploring-an-existing-repo" title="Link to this heading"></a></h2>
+<br>
+<br>
+<br>
+<ul class="simple">
+<li><p>History</p></li>
+<li><p>Branches</p></li>
+<li><p>Forks</p></li>
+<li><p>Issues</p></li>
+<li><p>Pull requests</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="demo-contribute">
+<h1>Demo - contribute<a class="headerlink" href="#demo-contribute" title="Link to this heading"></a></h1>
+<br>
+<br>
+<br>
+<ul class="simple">
+<li><p>Issue</p></li>
+<li><p>Fork / Branch</p></li>
+<li><p>Work</p></li>
+<li><p>Pull request</p></li>
+</ul>
+<p>New file vs changing file</p>
+</section>
+<hr class="docutils" />
+<section id="github-and-reproducibility">
+<h1>GitHub and reproducibility<a class="headerlink" href="#github-and-reproducibility" title="Link to this heading"></a></h1>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/version_control_reproducibility.png" src="../_images/version_control_reproducibility.png" />
+</figure>
+<p>]</p>
+<p>.quote[Is sharing your work on GitHub making it FAIR?]</p>
+<p>➡ Support yes, but <strong>GitHub link is not persistent</strong>!
+➡ Zenodo, …</p>
+<p>.footnote[Barker, M., Chue Hong, N.P., Katz, D.S. et al. Introducing the FAIR Principles for research software. Sci Data 9, 622 (2022). https://doi.org/10.1038/s41597-022-01710-x]</p>
+</section>
+<hr class="docutils" />
+<section id="motivation-to-use-git-hub">
+<h1>Motivation to use Git(Hub)<a class="headerlink" href="#motivation-to-use-git-hub" title="Link to this heading"></a></h1>
+<br>
+<p>.quote[“It broke… hopefully I have a working version somewhere?”]</p>
+<p>.quote[“Where is the latest version, and which one should I trust?”]</p>
+<p>.quote[“I am sure it used to work. What changed, when, and why?”]</p>
+<p>.quote[“When did this problem appear?”]</p>
+<p>.quote[“Something looks different - what was updated, and who accepted it?”]</p>
+</section>
+<hr class="docutils" />
+<section id="summary-github">
+<h1>Summary - GitHub<a class="headerlink" href="#summary-github" title="Link to this heading"></a></h1>
+<br>
+<br>
+<br>
+<br>
+<p>.center[
+.quote[Collaborate and share with others and yourself]
+]</p>
+<hr class="docutils" />
+<p>class: inverse, center, middle</p>
+</section>
+<section id="summary-words">
+<h1>Summary - words<a class="headerlink" href="#summary-words" title="Link to this heading"></a></h1>
+<p>Repository</p>
+<p>Issue</p>
+<p>Pull request</p>
+<p>Clone</p>
+<p>Commit</p>
+<p>Fork</p>
+<p>Branch</p>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h1>Chatter<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
+<p>.left-column50[</p>
+<br>
+<br>
+<p>What will you use GitHub for in the future?
+]</p>
+<p>.right-column30[</p>
+<br>
+<br>
+<figure class="align-default">
+<img alt="../_images/chat.svg" src="../_images/chat.svg" />
+</figure>
+<p>]</p>
+<hr class="docutils" />
+<p>class: center, middle, inverse</p>
+</section>
+<section id="break">
+<h1>Break<a class="headerlink" href="#break" title="Link to this heading"></a></h1>
+<hr class="docutils" />
+<p>class: center, middle</p>
+<figure class="align-default">
+<img alt="https://raw.githubusercontent.com/jupyter/design/refs/heads/main/logos/Square%20Logo/squarelogo-greytext-orangebody-greymoons/squarelogo-greytext-orangebody-greymoons.svg" src="https://raw.githubusercontent.com/jupyter/design/refs/heads/main/logos/Square%20Logo/squarelogo-greytext-orangebody-greymoons/squarelogo-greytext-orangebody-greymoons.svg" />
+</figure>
+<p>.quote[A tool for people who write code in Python, R or Julia]</p>
+</section>
+<hr class="docutils" />
+<section id="executable-notebooks">
+<h1>Executable notebooks<a class="headerlink" href="#executable-notebooks" title="Link to this heading"></a></h1>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/exec_nb.svg" src="../_images/exec_nb.svg" />
+</figure>
+<p>]</p>
+<p>…</p>
+<hr class="docutils" />
+<p>class: inverse</p>
+</section>
+<section id="researcher-perspective">
+<h1>Researcher perspective<a class="headerlink" href="#researcher-perspective" title="Link to this heading"></a></h1>
+<br>
+<p>Exploration</p>
+<p>.center[.quote[code, notes/explanation, visualization]]</p>
+<p>Publish a paper</p>
+<p>Sharing narrative</p>
+<p>Share to test and adapt</p>
+<p>.center[.quote[executable for others]]</p>
+</section>
+<hr class="docutils" />
+<section id="coding-in-the-terminal">
+<h1>Coding in the terminal<a class="headerlink" href="#coding-in-the-terminal" title="Link to this heading"></a></h1>
+<br>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/terminal_python.png" src="../_images/terminal_python.png" />
+</figure>
+<p>]</p>
+</section>
+<hr class="docutils" />
+<section id="script-summary">
+<h1>Script: summary<a class="headerlink" href="#script-summary" title="Link to this heading"></a></h1>
+<br>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/script.png" src="../_images/script.png" />
+</figure>
+<p>]</p>
+</section>
+<hr class="docutils" />
+<section id="notebooks-interactive">
+<h1>Notebooks: interactive<a class="headerlink" href="#notebooks-interactive" title="Link to this heading"></a></h1>
+<br>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/jupyter_example.png" src="../_images/jupyter_example.png" />
+</figure>
+<p>]</p>
+</section>
+<hr class="docutils" />
+<section id="demo-usecase-protopyping-exploration">
+<h1>Demo usecase: Protopyping / Exploration<a class="headerlink" href="#demo-usecase-protopyping-exploration" title="Link to this heading"></a></h1>
+<br>
+<br>
+<br>
+<ul class="simple">
+<li><p>Create notebook - naming</p></li>
+<li><p>Create cells - code / markdown</p></li>
+<li><p>Execute cells</p></li>
+<li><p>Restart and run all</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="demo-usecase-teaching">
+<h1>Demo usecase: Teaching<a class="headerlink" href="#demo-usecase-teaching" title="Link to this heading"></a></h1>
+<br>
+<br>
+<br>
+<ul class="simple">
+<li><p>Prefilled</p></li>
+<li><p>Exercises as rendered text</p></li>
+<li><p>Automatic checks</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="demo-usecase-sharing">
+<h1>Demo usecase: Sharing<a class="headerlink" href="#demo-usecase-sharing" title="Link to this heading"></a></h1>
+<br>
+<br>
+<br>
+<p>Tutorial / Walkthrough
+➡ Let others explore</p>
+</section>
+<hr class="docutils" />
+<section id="sharing">
+<h1>Sharing<a class="headerlink" href="#sharing" title="Link to this heading"></a></h1>
+<p>.left-column50[</p>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/github.svg" src="../_images/github.svg" />
+</figure>
+<p>]</p>
+<br>
+<p>Share to view</p>
+<p>]</p>
+<p>.right-column50[</p>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/running_nb_online.svg" src="../_images/running_nb_online.svg" />
+</figure>
+<p>]</p>
+<br>
+<p>Share to execute and change in the cloud</p>
+<p>]</p>
+</section>
+<hr class="docutils" />
+<section id="jupyter-and-reproducibility">
+<h1>Jupyter and reproducibility<a class="headerlink" href="#jupyter-and-reproducibility" title="Link to this heading"></a></h1>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/jupyter_reproducibility.png" src="../_images/jupyter_reproducibility.png" />
+</figure>
+<p>.quote[Jupyter supports code modularity + documentation and is a good format to share usage example]
+]</p>
+</section>
+<hr class="docutils" />
+<section id="under-the-hood">
+<h1>Under the hood<a class="headerlink" href="#under-the-hood" title="Link to this heading"></a></h1>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/jupyter_json.png" src="../_images/jupyter_json.png" />
+</figure>
+<p>.quote[IPYNB ➡ JSON]
+]</p>
+</section>
+<hr class="docutils" />
+<section id="jupyter-diff">
+<h1>Jupyter diff<a class="headerlink" href="#jupyter-diff" title="Link to this heading"></a></h1>
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/jupyter_diff.png" src="../_images/jupyter_diff.png" />
+</figure>
+<p>.quote[Version control possible, but limited benefits]
+]</p>
+</section>
+<hr class="docutils" />
+<section id="moving-away-from-jupyter">
+<h1>Moving away from Jupyter?<a class="headerlink" href="#moving-away-from-jupyter" title="Link to this heading"></a></h1>
+<br>
+<p>A Jupyter notebook …</p>
+<ul class="simple">
+<li><p>is super useful in protoyping.</p></li>
+<li><p>can even be the endpoint.</p></li>
+<li><p>can be used in high performance computing environments.</p></li>
+</ul>
+<p>You may want to switch to scripts when …</p>
+<ul class="simple">
+<li><p>building a (command line/graphical) tool.</p></li>
+<li><p>you need to run it with multiple datasets/parameters.</p></li>
+<li><p>efficiency is the goal.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="jupyter-ecosystem">
+<h1>Jupyter ecosystem<a class="headerlink" href="#jupyter-ecosystem" title="Link to this heading"></a></h1>
+<br>
+<br>
+<p><strong>Notebook</strong> : Code + markdown cells ➡ <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code></p>
+<p><strong>Lab</strong> : Interface to view <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files, layout, extensions</p>
+<p><strong>Hub</strong> : Jupyter for servers, multiple users</p>
+<hr class="docutils" />
+<p>class: middle, center</p>
+</section>
+<section id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h1>
+<p>.quote[Jupyter is a helpful tool in the beginning and end of the research process, and can also be used throughout.]</p>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h1>Chatter<a class="headerlink" href="#id4" title="Link to this heading"></a></h1>
+<p>.left-column50[</p>
+<br>
+<br>
+<p>What could you imagine using Jupyter for in the future?</p>
+<p>]</p>
+<p>.right-column30[</p>
+<br>
+<br>
+<figure class="align-default">
+<img alt="../_images/chat.svg" src="../_images/chat.svg" />
+</figure>
+<section id="id5">
+<h2>]<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+</section>
+</section>
+<section id="where-to-go-from-here">
+<h1>Where to go from here …<a class="headerlink" href="#where-to-go-from-here" title="Link to this heading"></a></h1>
+<br>
+<p>Play around with <strong>GitHub</strong></p>
+<ul class="simple">
+<li><p>Contribute to our recipe book</p></li>
+<li><p>Create your own repo</p></li>
+<li><p>Try things out with colleagues</p></li>
+</ul>
+<p>Play around with <strong>Jupyter</strong></p>
+<ul class="simple">
+<li><p>Noppe workspace available for a while</p></li>
+<li><p>Check out other Noppe applications</p></li>
+<li><p>Install on your own computer</p></li>
+</ul>
+<p>Learn more…</p>
+<hr class="docutils" />
+<p>.center[</p>
+<figure class="align-default">
+<img alt="../_images/coderefinery.png" src="../_images/coderefinery.png" />
+</figure>
+<p>]</p>
+<br>
+<p>Tools and techniques for researchers who code…</p>
+<p>3 half days of <strong>Git</strong> (-Hub, VSCode, command line)
++
+3 half days of <strong>reproducible research</strong> (computing environments and workflows), <strong>documentation</strong>, <strong>social coding</strong> (sharing and licensing), <strong>modular code development</strong>, <strong>jupyter</strong> (widgets and other tricks) and <strong>automated testing</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://coderefinery.org/lessons/#lessons-that-we-teach-in-our-tools-workshops">Materials</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/&#64;coderefinery">Recordings</a></p></li>
+<li><p>Next workshop in March ‘26: Sign up for <a class="reference external" href="https://coderefinery.org/about/newsletter/">newsletter</a></p></li>
+<li><p><strong>Bring your own classroom</strong>, contact <code class="docutils literal notranslate"><span class="pre">support&#64;coderefinery.org</span></code></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="acknowledgements">
+<h1>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Link to this heading"></a></h1>
+<p>Reuse and inspiration was drawn from CodeRefinery and Skills4EOSC.</p>
+<p>CodeRefinery lessons:</p>
+<ul class="simple">
+<li><p>Introduction to and collaborative git</p></li>
+<li><p><a class="reference external" href="https://coderefinery.github.io/github-without-command-line/">Git without the command line</a></p></li>
+<li><p>Jupyter</p></li>
+<li><p><a class="reference external" href="https://coderefinery.github.io/programming4ds/">Programming for Data Stewards</a></p></li>
+</ul>
+<p>Logos are belong to the companies they represent</p>
+<p>Icons used are from UXWing</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

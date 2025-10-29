@@ -1,0 +1,205 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to organize a group’s work &mdash; Enhancing Data Support: Practical Reproducibility  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Getting access to CSC Noppe" href="../noppe/" />
+    <link rel="prev" title="Contributing to existing repositories using pull requests" href="../contributing/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Enhancing Data Support: Practical Reproducibility
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Version Control with GitHub</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../github-account/">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-basics/">Basics and motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../creating-repo-using-web/">Creating repositories using the web interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing to existing repositories using pull requests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to organize a group’s work</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#github-organizations">GitHub organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#organizational-permissions">Organizational permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-or-gitlab">GitHub or GitLab?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#direct-commits-or-pull-requests">Direct commits or pull requests?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#small-vs-large-changes">Small vs. large changes</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Jupyter notebooks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../noppe/">Getting access to CSC Noppe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter/">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter-exercise/">Jupyter Exercises</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Optional lessons</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../doi-for-repo/">Making your project citable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../websites/">Hosting websites/homepages on GitHub Pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sharing-notebooks/">Sharing plots and notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installing-python/">Software install instructions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Enhancing Data Support: Practical Reproducibility</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How to organize a group’s work</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/samumantha/github-jupyter-4-ds/blob/main/content/group-work.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-organize-a-group-s-work">
+<h1>How to organize a group’s work<a class="headerlink" href="#how-to-organize-a-group-s-work" title="Link to this heading"></a></h1>
+<section id="github-organizations">
+<h2>GitHub organizations<a class="headerlink" href="#github-organizations" title="Link to this heading"></a></h2>
+<p>Should I start a repository under my account or open a new organization?</p>
+<ul class="simple">
+<li><p>Single-person projects often start under own account.</p></li>
+<li><p>It is no problem to move a project from own namespace to an organization later.</p></li>
+<li><p>When starting a larger project with several people, possibly several affiliations, an organization may be a better start.</p></li>
+<li><p>If this is a GitHub pages project, then it will matter for the URL:
+<code class="docutils literal notranslate"><span class="pre">myuser.github.io/myproject/</span></code> vs. <code class="docutils literal notranslate"><span class="pre">ourorg.github.io/ourproject/</span></code>.</p></li>
+</ul>
+<p>Should I add everybody as collaborator?</p>
+<ul class="simple">
+<li><p>If you are a handful of project collaborators it probably makes sense to add everybody as collaborators.</p></li>
+<li><p>But one does not have to be a <em>collaborator</em> to contribute (anybody can send contributions to public projects).</p></li>
+<li><p>External contributors don’t have to be added.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="organizational-permissions">
+<h2>Organizational permissions<a class="headerlink" href="#organizational-permissions" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Organizations have <strong>owners</strong> and <strong>members</strong>.</p></li>
+<li><p>Owners can add additional members and delete repositories.</p></li>
+<li><p>Members can also be organized into teams.</p></li>
+<li><p>We recommend to write-protect the default branch and protect it against force-pushes and accidental deletions.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="github-or-gitlab">
+<h2>GitHub or GitLab?<a class="headerlink" href="#github-or-gitlab" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>GitHub: probably better integrations (with services like Zenodo), probably more visibility (more users).</p></li>
+<li><p>GitLab: more features, you can also self-host, more advanced continuous integration.</p></li>
+<li><p>Your own university’s GitLab: most control, local support, but limited visibility and you might lose access when you move on.</p></li>
+<li><p><a class="reference external" href="https://coderefinery.org/repository/">Nordic GitLab</a>: easier collaboration across organizations and national borders, visibility within Nordics.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="direct-commits-or-pull-requests">
+<h2>Direct commits or pull requests?<a class="headerlink" href="#direct-commits-or-pull-requests" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>For single-person projects: direct pushes.</p></li>
+<li><p>If you have somebody who can help you with code review: use pull requests.</p></li>
+<li><p>For projects with 2 or more persons: agree on applying all changes via pull requests
+and create a new branch for every change.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="small-vs-large-changes">
+<h2>Small vs. large changes<a class="headerlink" href="#small-vs-large-changes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Small changes or agreed upon improvements can be worked on directly.</p></li>
+<li><p>For larger changes first open an issue and describe your idea and collect feedback.</p></li>
+<li><p>Alternative: if you already have a larger change half-finished but you are unsure whether you are on the right
+track, open a <strong>draft pull request</strong>. These are meant to share unfinished drafts and collect suggestions.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../contributing/" class="btn btn-neutral float-left" title="Contributing to existing repositories using pull requests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../noppe/" class="btn btn-neutral float-right" title="Getting access to CSC Noppe" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
