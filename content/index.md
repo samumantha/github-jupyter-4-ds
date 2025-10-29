@@ -106,5 +106,10 @@ installing-python
 
 ## Inspiration for this lesson and further reading
 
-- TODO: Link to CodeRefinery lesson DOIs
-- TODO: Link to Skills4EOSC curriculum link
+CodeRefinery lessons:
+- Git intro: https://doi.org/10.5281/zenodo.16925023
+- Git collaborative: https://doi.org/10.5281/zenodo.16925120
+- Jupyter: https://doi.org/10.5281/zenodo.16410839
+- GitHub without command line: https://coderefinery.github.io/github-without-command-line/
+
+Skills4EOSC data steward curriculum 
